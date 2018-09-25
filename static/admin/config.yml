@@ -23,10 +23,26 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/sample/content/index.md"
-        label: "Sample"
-        name: "sample"
+      - file: "src/pages/company/content/index.md"
+        label: "Company"
+        name: "company"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sample-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "company-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - file: "src/pages/technologies/content/index.md"
+        label: "Technologies"
+        name: "technologies"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      
+      - file: "src/pages/clientele/content/index.md"
+        label: "Clientele"
+        name: "clientele"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "clientele-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
