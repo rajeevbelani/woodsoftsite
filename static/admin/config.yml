@@ -23,7 +23,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/company/content/index.md"
+      - file: "src/pages/company/index.md"
         label: "Company"
         name: "company"
         fields:
@@ -31,7 +31,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-      - file: "src/pages/technologies/content/index.md"
+      - file: "src/pages/technologies/index.md"
         label: "Technologies"
         name: "technologies"
         fields:
@@ -39,7 +39,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       
-      - file: "src/pages/clientele/content/index.md"
+      - file: "src/pages/clientele/index.md"
         label: "Clientele"
         name: "clientele"
         fields:
