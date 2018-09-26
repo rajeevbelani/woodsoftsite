@@ -1,6 +1,6 @@
 ---
-templateKey: 'sample-page'
-path: /sample
+templateKey: 'company-template'
+path: /company
 title: About our values
 ---
 ### Shade-grown coffee

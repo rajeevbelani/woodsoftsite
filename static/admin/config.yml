@@ -27,7 +27,7 @@ collections:
         label: "Company"
         name: "company"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "company-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "company-template"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
@@ -35,7 +35,7 @@ collections:
         label: "Technologies"
         name: "technologies"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-template"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       
@@ -43,6 +43,6 @@ collections:
         label: "Clientele"
         name: "clientele"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "clientele-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "clientele-template"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
