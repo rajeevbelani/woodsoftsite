@@ -26,9 +26,9 @@ const Header = ({ title }) => (
           <div class="container">
               
               <div class="navbar-brand">
-                  <Link class="navbar-item" href="/">
+                  {/* <Link class="navbar-item" href="/">
                       <img src="assets/images/logos/bulkit-blue.svg" alt="" />
-                  </Link>
+                  </Link> */}
 
                   
                   {/* <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
@@ -83,11 +83,11 @@ const Header = ({ title }) => (
                         </Link>
                       </div>
 
-                      <div class="navbar-item is-slide">
+                      {/* <div class="navbar-item is-slide">
                         <Link to="/clientele">
                             Clientele
                         </Link>
-                      </div>
+                      </div> */}
                       
                       <div class="navbar-item is-slide">
                         <Link to="/company">

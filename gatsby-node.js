@@ -1,7 +1,8 @@
 const _ = require('lodash');
 const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
-const { createFilePath } = require('gatsby-source-filesystem')
+const { createFilePath } = require('gatsby-source-filesystem');
+const createPaginatedPages = require("gatsby-paginate");
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
@@ -11,25 +12,39 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       allMarkdownRemark(limit: 1000) {
         edges {
           node {
+            excerpt(pruneLength: 400)
             id
             fields {
               slug
             }
             frontmatter {
               tags
+              title
               templateKey
-            }
+              date(formatString: "MMMM DD, YYYY")
+            }            
           }
         }
       }
     }
   `).then(result => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
+      result.errors.forEach(e => console.error(e.toString()));
+      return Promise.reject(result.errors);
     }
 
     const posts = result.data.allMarkdownRemark.edges
+    let filteredPosts = posts.filter(post => post.node.frontmatter.templateKey === 'article-template');
+    console.log(`FIltered Posts :: ${JSON.stringify(filteredPosts)}`);
+      
+    createPaginatedPages({
+      edges: filteredPosts,
+      createPage: createPage,
+      pageTemplate: "src/templates/blogPage-template.js",
+      pageLength: 5, // This is optional and defaults to 10 if not used
+      pathPrefix: "blog", // This is optional and defaults to an empty string if not used
+      context: {} // This is optional and defaults to an empty object if not used
+    });
 
     posts.forEach(edge => {
       const id = edge.node.id;
@@ -46,9 +61,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           context: {
             id,
           },
-        })
+        });
       }
-    })
+    });
 
     // // Tag pages:
     // let tags = []

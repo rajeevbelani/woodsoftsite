@@ -11,6 +11,14 @@ const Layout = ({ data, children }) => (
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
+    <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                  var name = 'world';
+                  console.log('Hello ' + name);
+              `,
+        }}
+      />
   </div>
 );
 

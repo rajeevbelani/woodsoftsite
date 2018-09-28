@@ -39,7 +39,6 @@ export default ({ data }) => (
 
             <div class="content-wrapper">
                 <div class="columns">
-                    
                     <div class="column is-4">
                         <div class="service-box">
                             <h2 class="service-title">Get to know us</h2>
