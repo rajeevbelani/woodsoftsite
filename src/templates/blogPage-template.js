@@ -21,13 +21,17 @@ export const BlogPostTemplate = ({ posts }) => {
                 </div>
             </div>
         </div>
-      <Box>
-        {posts
+      {/* <Box> */}
+      <div class="columns is-multiline">
+          {posts
           .filter(post => post.node.frontmatter.templateKey === 'article-template')
           .map(({node: post}) => (
+            <div class="column is-4">
               <PostCard post={post} />
+            </div>
           ))};
-      </Box>
+      </div>
+      {/* </Box> */}
     </Layout>
   )
 }
