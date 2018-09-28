@@ -27,6 +27,35 @@ export default ({ data }) => (
     <div style={{ height: '50vh' }} />
     <IOExample /> */}
 
+    <div class="hero is-theme-primary is-slant">
+        <div id="main-hero" class="hero-body is-clean">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-5 caption-column has-text-left">
+                        <h1 class="clean-title light-text">
+                            Apps for all Screens
+                        </h1>
+                        <div class="subtitle is-5 pt-10 pb-10">
+                            Some long subtile Some long subtile Some long subtile Some long subtile Some long subtile
+                        </div>
+                        <div class="cta-wrapper has-text-left">
+                            <a href="#product" class="button button-cta btn-align btn-outlined is-bold light-btn rounded raised">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-9 is-offset-1">
+                        <figure class="image is-3by2">
+                            <img class="clean-hero-mockup mt-80 z-index-2" src="assets/images/illustrations/mockups/landing1/macbook-app.png" alt="" />
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
     <section id="services" class="section is-medium">
         <div class="container">
             <div class="centered-title">
@@ -93,6 +122,26 @@ export default ({ data }) => (
                                     <p class="box-content">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.</p>
                                 </div>
                             </div>
+
+                            <div class="column is-6">
+                                <div class="agency-icon-box">
+                                    <div class="is-icon-reveal">
+                                        <i class="im im-icon-Shop-4"></i>
+                                    </div>
+                                    <div class="box-title">Print & Branding</div>
+                                    <p class="box-content">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.</p>
+                                </div>
+                            </div>
+
+                            <div class="column is-6">
+                                <div class="agency-icon-box">
+                                    <div class="is-icon-reveal">
+                                        <i class="im im-icon-Shop-4"></i>
+                                    </div>
+                                    <div class="box-title">Print & Branding</div>
+                                    <p class="box-content">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt, nec et iisque placerat pertinax.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -103,6 +152,13 @@ export default ({ data }) => (
   
     <section class="section section-feature-grey is-medium">
         <div class="container">
+            <div class="centered-title">
+                <h2>How we work</h2>
+                <div class="title-divider"></div>
+                <div class="subheading">
+                    (Some subtitle here also)
+                </div>
+            </div>
             <div class="columns services-cards is-minimal is-vcentered is-gapless is-multiline">
                 
                 <div class="column">
@@ -188,10 +244,12 @@ export default ({ data }) => (
                         </div>
                     </div>
                 </div>
+
+                
             </div>
-            <div class="has-text-centered mt-40 mb-40 is-title-reveal">
+            {/* <div class="has-text-centered mt-40 mb-40 is-title-reveal">
                 <a class="button button-cta is-bold btn-align primary-btn btn-outlined rounded">Learn more</a>
-            </div>
+            </div> */}
         </div>
     </section>
   

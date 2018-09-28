@@ -45,7 +45,7 @@ const Header = ({ title }) => (
 
                   
                   <div class="custom-burger" data-target="">
-                      <Link id="" class="responsive-btn" to="javascript:void(0);">
+                      <Link id="" class="responsive-btn" to="">
                           <span class="menu-toggle">	
                               <span class="icon-box-toggle"> 	
                                   <span class="rotate">
