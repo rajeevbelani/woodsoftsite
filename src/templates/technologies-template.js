@@ -8,7 +8,6 @@ export const TechnologiesPageTemplate = ({ title, content }) => {
   return (
     <Layout>
       <div class="hero is-large is-theme-primary">
-            
             <div class="hero-body ">
                 <div class="container has-text-centered">
                     <div class="columns is-vcentered">

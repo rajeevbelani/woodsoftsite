@@ -8,32 +8,25 @@ import PostCard from '../components/PostCard';
 export const BlogPostTemplate = ({ posts }) => {
   return (
     <Layout>
-      <div class="hero is-relative is-dark">
-      <div id="main-hero" class="hero-body">
+       <div class="hero is-medium is-theme-primary">
+            <div class="hero-body ">
                 <div class="container has-text-centered">
                     <div class="columns is-vcentered">
-                        <div class="column is-6 is-offset-3 has-text-centered is-header-caption">
-                            <h1 class="title main-title subpage-title text-bold is-2">
-                                BLOG
+                        <div class="column is-6 is-offset-3 has-text-centered">
+                            <h1 class="clean-title light-text">
+                              BLOG
                             </h1>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
       <Box>
-    {posts
-        .filter(post => post.node.frontmatter.templateKey === 'article-template')
-        .map(({node: post}) => (
-
-            <PostCard post={post} />
-            
-        ))};
-        {/* <PostCard post={data} /> */}
-        {/* <p class="title is-1 is-spaced">
-          {JSON.stringify(data)}
-        </p> */}
-        {/* <div dangerouslySetInnerHTML={{ __html: content }} /> */}
+        {posts
+          .filter(post => post.node.frontmatter.templateKey === 'article-template')
+          .map(({node: post}) => (
+              <PostCard post={post} />
+          ))};
       </Box>
     </Layout>
   )
