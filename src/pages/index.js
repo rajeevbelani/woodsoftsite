@@ -469,24 +469,23 @@ export default ({ data }) => (
   </Layout>
 );
 
-export const query = graphql`
-  query HomepageQuery {
-    homeJson {
-      title
-      content {
-        childMarkdownRemark {
-          html
-          rawMarkdownBody
-        }
-      }
-      gallery {
-        title
-        copy
-        image {
-          childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

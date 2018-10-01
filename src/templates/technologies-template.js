@@ -140,7 +140,7 @@ TechnologiesPageTemplate.propTypes = {
 
 const TechnologiesPage = ({ data }) => {
   const { markdownRemark: post } = data
-
+  console.log(`Technologies Page data :: ${JSON.stringify(post)}`);
   return (
     
       <TechnologiesPageTemplate
