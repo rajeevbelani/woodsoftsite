@@ -34,8 +34,7 @@ export const CompanyPageTemplate = ({ title, content }) => {
 
             <div class="content-wrapper">
                 <div class="modern-team">
-                    
-                    <article class="modern-team-item circle-mask zoom-effect">
+                  <article class="modern-team-item circle-mask zoom-effect">
                     <div class="item-wrapper">
                         <div class="item-img">
                             <img src="https://via.placeholder.com/370x450" class="member-avatar" alt="" />
