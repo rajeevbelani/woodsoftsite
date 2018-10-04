@@ -1,9 +1,8 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
-import Layout from 'components/layout';
-import Box from 'components/box';
-import PostCard from '../components/PostCard';
+import Layout from 'components/common/layout';
+import PostCard from 'components/common/PostCard';
 
 export const BlogPostTemplate = ({ posts }) => {
   return (
