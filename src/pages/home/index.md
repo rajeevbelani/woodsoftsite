@@ -41,8 +41,6 @@ process:
       text: blurb 2
     - heading: Blurb Heading 3
       text: blurb 3
-    - heading: Blurb heading 4
-      text: blurb 4
   description: process description
   heading: process heading
 testimonials:
