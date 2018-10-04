@@ -1,19 +1,30 @@
 ---
-templateKey: 'home-template'
-path: /company
+templateKey: home-template
 hero:
   heroDescription: descrption
   heroTitle: hero title
-intro:
+whatWeDo:
   blurbs:
-    - text: Blurb 1
-    - text: blurnb 2
-    - text: bllurb 3
-    - text: blurb 4
-  descHeading: description
-  description: what descriptiomn
-  heading: what heading
-  subHeading: sub heading
+    - text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
+    - text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
+    - text: >-
+        What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
+        3
+    - text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
+  description: What Description
+  heading: What Heading
+howWeDo:
+  blurbs:
+    - text: How Blurb 1
+    - text: How Blurb 2
+    - text: How Blurb 3
+    - text: How blurb 4
+  descHeading: How Description Heading
+  description: |-
+    HOw Deascprition
+     HOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw Deascprition
+  heading: How Heading
+  subHeading: How Sub heading
 process:
   blurbs:
     - text: 'blurb1 '
@@ -27,5 +38,7 @@ testimonials:
     quote: quote 1
   - author: kaun wapas bola
     quote: bola
+  - author: Anon
+    quote: Please say something anything
 ---
 
