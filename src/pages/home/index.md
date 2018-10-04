@@ -5,20 +5,28 @@ hero:
   heroTitle: hero title
 whatWeDo:
   blurbs:
-    - text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
-    - text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
-    - text: >-
+    - heading: Heading 1
+      text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
+    - heading: Heading 2
+      text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
+    - heading: Heading 3
+      text: >-
         What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
         3
-    - text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
+    - heading: Heading 4
+      text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
   description: What Description
   heading: What Heading
 howWeDo:
   blurbs:
-    - text: How Blurb 1
-    - text: How Blurb 2
-    - text: How Blurb 3
-    - text: How blurb 4
+    - heading: Heading 1
+      text: How Blurb 1
+    - heading: Heading 2
+      text: How Blurb 2
+    - heading: Heading 3
+      text: How Blurb 3
+    - heading: Heading 4
+      text: How blurb 4
   descHeading: How Description Heading
   description: |-
     HOw Deascprition
@@ -27,10 +35,14 @@ howWeDo:
   subHeading: How Sub heading
 process:
   blurbs:
-    - text: 'blurb1 '
-    - text: blurb 2
-    - text: blurb 3
-    - text: blurb 4
+    - heading: Heading 1
+      text: 'blurb1 '
+    - heading: Blurb Heading 2
+      text: blurb 2
+    - heading: Blurb Heading 3
+      text: blurb 3
+    - heading: Blurb heading 4
+      text: blurb 4
   description: process description
   heading: process heading
 testimonials:
