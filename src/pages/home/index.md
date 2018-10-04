@@ -5,12 +5,16 @@ hero:
   heroTitle: hero title
 whatWeDo:
   blurbs:
-    - text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
-    - text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
-    - text: >-
+    - heading: Heading 1
+      text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
+    - heading: Heading 2
+      text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
+    - heading: Heading 3
+      text: >-
         What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
         3
-    - text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
+    - heading: Heading 4
+      text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
   description: What Description
   heading: What Heading
 howWeDo:
