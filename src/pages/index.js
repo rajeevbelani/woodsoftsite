@@ -26,6 +26,7 @@ export default ({ data }) => (
     <Gallery items={data.homeJson.gallery} />
     <div style={{ height: '50vh' }} />
     <IOExample /> */}
+    {JSON.stringify(data)}
 
     <div class="hero is-theme-primary is-slant">
         <div id="main-hero" class="hero-body is-clean">
@@ -471,9 +472,8 @@ export default ({ data }) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+    allMarkdownRemark (
+      filter: { frontmatter: { templateKey: { eq: "home-template" } }}
     ) {
       edges {
         node {

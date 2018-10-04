@@ -1,4 +1,6 @@
 ---
+templateKey: 'home-template'
+path: /company
 hero:
   heroDescription: descrption
   heroTitle: hero title

@@ -50,7 +50,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       const id = edge.node.id;
       const templateKey = edge.node.frontmatter.templateKey;
       console.log (` edge.node.frontmatter.templateKey ::: ${ JSON.stringify(templateKey)}`);
-      if (templateKey !== null) {
+      if (templateKey !== null && templateKey !=='home-template') {
         createPage({
           path: edge.node.fields.slug,
           tags: edge.node.frontmatter.tags,
