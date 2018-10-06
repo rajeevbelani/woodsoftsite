@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from 'components/wssite/home/hero'
+import Hero from 'components/wssite/home/Hero'
 import Testimonials from 'components/wssite/home/Testimonials'
 import HowWeWork from '../components/wssite/home/HowWeWork'
 import OurProcess from 'components/wssite/home/OurProcess'
