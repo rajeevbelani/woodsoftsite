@@ -38,7 +38,7 @@ export const pageQuery = graphql`
                   heading
                 }
               }
-              howWeWork {
+              howWeDo {
                 descHeading
                 description
                 heading
