@@ -10,13 +10,13 @@ export default ({ hero, whatWeDo, howWeWork, testimonials, process  }) => {
     return (
     <div>
         <Hero data={hero} />
-        <section id="services" class="section is-medium">
+        {/* <section id="services" class="section is-medium">
             <WhatWeDo data={whatWeDo} />
         </section>
 
         <section class="section section-feature-grey is-medium">
             <HowWeWork data={howWeWork} />
-        </section>
+        </section> */}
 
         <section class="section is-medium huge-pb">
             <OurProcess data={process} />

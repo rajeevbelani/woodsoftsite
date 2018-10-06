@@ -165,24 +165,7 @@ export const TechnologiesPageQuery = graphql`
                 heroDescription
                 heroTitle
               }
-              whatWeDo {
-                description
-                heading
-                blurbs {
-                  text
-                  heading
-                }
-              }
-              howWeDo {
-                descHeading
-                description
-                heading
-                subHeading
-                blurbs {
-                  text
-                  heading
-                }
-              }
+              
               testimonials {
                 author
                 quote
