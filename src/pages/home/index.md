@@ -41,5 +41,9 @@ process:
       text: blurb 3
   description: process description
   heading: process heading
+testimonials:
+  - {}
+  - {}
+  - {}
 ---
 
