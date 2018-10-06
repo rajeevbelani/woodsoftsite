@@ -30,7 +30,24 @@ export const pageQuery = graphql`
                 heroDescription
                 heroTitle
               }
-              
+              whatWeDo {
+                heading
+                subHeading
+                descHeading
+                description
+                blurbs {
+                  heading
+                  text
+                }
+              }
+              howWeWork {
+                heading
+                subHeading
+                blurbs {
+                  heading
+                  text
+                } 
+              }
               testimonials {
                 author
                 quote
