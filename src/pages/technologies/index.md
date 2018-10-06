@@ -2,7 +2,7 @@
 templateKey: technologies-template
 hero:
   heroDescription: desc tech
-  heroTitle: Hero Tech
+  heroTitle: Hero Tech 1
 intro:
   description: dhsh
   heading: heaing
