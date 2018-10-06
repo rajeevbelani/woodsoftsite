@@ -11,7 +11,7 @@ const HomePage = ({ data }) => {
         <HomePageTemplate
             hero={hero}
             whatWeDo={whatWeDo}
-            howWeWork={whatWeDo}
+            howWeWork={howWeWork}
             testimonials={testimonials}
             process={process}
         />
@@ -38,7 +38,7 @@ export const pageQuery = graphql`
                   heading
                 }
               }
-              howWeDo {
+              howWeWork {
                 descHeading
                 description
                 heading
