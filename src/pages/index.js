@@ -5,14 +5,14 @@ import Layout from 'components/common/layout'
 
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
-    const { hero, whatWeDo, howWeWork, process } = frontmatter;
+    const { hero, whatWeDo, howWeWork, clients, process } = frontmatter;
     return (
       <Layout>
         <HomePageTemplate
             hero={hero}
             whatWeDo={whatWeDo}
             howWeWork={howWeWork}
-            
+            testimonials={clients}
             process={process}
         />
         </Layout>
@@ -48,7 +48,14 @@ export const pageQuery = graphql`
                   text
                 } 
               }
-         
+              clients {
+                heading
+                subHeading
+                blurbs {
+                  heading
+                  text
+                } 
+              }
               process {
                 description
                 heading
