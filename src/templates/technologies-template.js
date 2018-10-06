@@ -166,10 +166,6 @@ export const TechnologiesPageQuery = graphql`
                 heroTitle
               }
               
-              testimonials {
-                author
-                quote
-              }
               process {
                 description
                 heading

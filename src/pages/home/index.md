@@ -41,12 +41,5 @@ process:
       text: blurb 3
   description: process description
   heading: process heading
-testimonials:
-  - author: kaun bola
-    quote: quote 1
-  - author: kaun wapas bola
-    quote: bola
-  - author: Anon
-    quote: Please say something anything
 ---
 
