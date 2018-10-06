@@ -1,26 +1,11 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-// import { graphql } from 'gatsby'
-import Layout from 'components/common/layout';
-import PostCard from 'components/common/PostCard';
+import Layout from '../components/common/layout';
+import PostCard from '../components/common/PostCard';
+import Hero from '../components/common/TitleHero'
+import Pagination from '../components/common/Pagination'
 
-export const BlogPostTemplate = ({ posts }) => {
+export const BlogListTemplate = ({ posts }) => {
   return (
-    <Layout>
-       <div class="hero is-medium is-theme-primary">
-            <div class="hero-body ">
-                <div class="container has-text-centered">
-                    <div class="columns is-vcentered">
-                        <div class="column is-6 is-offset-3 has-text-centered">
-                            <h1 class="clean-title light-text">
-                              BLOG
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      {/* <Box> */}
       <div class="columns is-multiline">
           {posts
           .filter(post => post.node.frontmatter.templateKey === 'article-template')
@@ -30,19 +15,24 @@ export const BlogPostTemplate = ({ posts }) => {
             </div>
           ))};
       </div>
-      {/* </Box> */}
-    </Layout>
+    
   )
 }
 
 const BlogPost = ({ data, pathContext }) => {
   // const { markdownRemark: post } = data
   const { group, index, first, last, pageCount } = pathContext;
-  console.log(`Blog Post :: ${JSON.stringify(data)}  ::  ${JSON.stringify(pathContext)}`)
+  // const { group } = pathContext;
+
+  console.log(`Blog Post context   ::  ${JSON.stringify(pathContext)}`)
   return (
-      <BlogPostTemplate
+    <Layout>
+      <Hero title="BLOG" />
+      <BlogListTemplate
         posts={group}
       />
+      <Pagination currentPage={index} numberOfPages={pageCount} />
+    </Layout>
   )
 }
 

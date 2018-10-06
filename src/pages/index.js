@@ -1,46 +1,21 @@
 import React from 'react';
-import Layout from 'components/common/layout';
 import { graphql } from 'gatsby';
-import HeroWithImage from 'components/common/hero/heroWithImage'
-import Testimonials from 'components/wssite/home/Testimonials'
-import HowWeWork from 'components/wssite/home/HowWeWork'
-import OurProcess from 'components/wssite/home/OurProcess'
-import WhatWeDo from 'components/wssite/home/WhatWeDo'
-
-export const HomePageTemplate = ({ hero, whatWeDo, howWeWork, testimonials, process  }) => {
-    return (
-      <Layout>
-        <HeroWithImage data={hero} />
-        <section id="services" class="section is-medium">
-            <WhatWeDo data={whatWeDo} />
-        </section>
-
-        <section class="section section-feature-grey is-medium">
-            <HowWeWork data={howWeWork} />
-        </section>
-
-        <section class="section is-medium huge-pb">
-            <OurProcess data={process} />
-        </section>
-
-        <section id="card-testimonials" class="section section-feature-grey is-medium is-skewed-sm">
-            <Testimonials data={testimonials} />
-        </section>
-      </Layout>
-    )
-}
+import HomePageTemplate from '../templates/home-template'
+import Layout from 'components/common/layout'
 
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
-    const { hero, whatWeDo, howWeDo, testimonials, process } = frontmatter;
+    const { hero, whatWeDo, howWeWork, testimonials, process } = frontmatter;
     return (
+      <Layout>
         <HomePageTemplate
             hero={hero}
-            whatWeDo={howWeDo}
-            howWeWork={whatWeDo}
+            whatWeDo={whatWeDo}
+            howWeWork={howWeWork}
             testimonials={testimonials}
             process={process}
         />
+        </Layout>
     )
   }
   
@@ -60,15 +35,17 @@ export const pageQuery = graphql`
                 heading
                 blurbs {
                   text
+                  heading
                 }
               }
-              howWeDo {
+              howWeWork {
                 descHeading
                 description
                 heading
                 subHeading
                 blurbs {
                   text
+                  heading
                 }
               }
               testimonials {
@@ -80,6 +57,7 @@ export const pageQuery = graphql`
                 heading
                 blurbs {
                   text
+                  heading
                 }
               }
         }

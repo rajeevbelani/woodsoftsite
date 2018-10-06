@@ -1,19 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import SectionTitle from 'components/common/SectionTitle'
 
 const Testimonials = ({ data }) => (
     <div class="container is-reverse-skewed-sm">
         <div class="section-title-wrapper has-text-centered">
             <div class="clean-bg-symbol"><i class="fa fa-gg"></i></div>
-            <div class="centered-title">
-            <h2>We are Trusted.</h2>
-            <div class="title-divider"></div>
-            <div class="subheading">
-            Access integrations and new features in a matter of seconds
-            </div>
+            <SectionTitle heading="We are Trusted." subHeading="Access integrations and new features in a matter of seconds" />    
         </div>
-        </div>
-
         <div class="content-wrapper">
             
             <div class="columns">

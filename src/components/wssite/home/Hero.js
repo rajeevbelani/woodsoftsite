@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const heroWithImage = ({ data }) => (
+const HomeHero = ({ data }) => (
     <div class="hero is-theme-primary is-slant">
         <div id="main-hero" class="hero-body is-clean">
             <div class="container has-text-centered">
@@ -32,8 +32,8 @@ const heroWithImage = ({ data }) => (
         
 );
 
-heroWithImage.propTypes = {
+HomeHero.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default heroWithImage;
+export default HomeHero;

@@ -2,23 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/common/layout';
+import Hero from 'components/common/TitleHero'
 
 export const CompanyPageTemplate = ({ title, content }) => {
   return (
-    <Layout>
-      <div class="hero is-medium is-theme-primary">
-            <div class="hero-body ">
-                <div class="container has-text-centered">
-                    <div class="columns is-vcentered">
-                        <div class="column is-6 is-offset-3 has-text-centered">
-                            <h1 class="clean-title light-text">
-                              We Solve Your Challenges
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div>
       <section class="section is-medium">
         <div class="container">
             
@@ -111,14 +99,7 @@ export const CompanyPageTemplate = ({ title, content }) => {
         </div>
     </div>
 </section>
-
-      {/* <Box>
-        <p class="title is-1 is-spaced">
-          {title}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </Box> */}
-    </Layout>
+</div>
   )
 }
 
@@ -132,10 +113,13 @@ const CompanyPage = ({ data }) => {
 
   return (
     
+    <Layout>
+      <Hero title="We Solve Your Challenges" />
       <CompanyPageTemplate
         title={post.frontmatter.title}
         content={post.html}
       />
+      </Layout>
   )
 }
 

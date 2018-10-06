@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const titleHero = ({ title }) => (
+const TitleHero = ({ title }) => (
     <div class="hero is-medium is-theme-primary">
         <div class="hero-body ">
             <div class="container has-text-centered">
@@ -17,8 +17,8 @@ const titleHero = ({ title }) => (
     </div>
 );
 
-titleHero.propTypes = {
+TitleHero.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default titleHero;
+export default TitleHero;

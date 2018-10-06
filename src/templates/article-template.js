@@ -10,13 +10,9 @@ export const ArticleTemplate = ({ title, content }) => {
           <div class="container">
               <div class="columns">
                   <div class="column is-10 is-offset-1">
-                      
                       <div class="flex-card is-full-post light-bordered">
-                      
                           <div class="post-meta content">
-                      
                               <img class="author-avatar is-hidden-mobile" src="https://via.placeholder.com/250x250" alt="" />
-                      
                               <div class="title-block">
                                   <h2>{title}</h2>
                                   <h4>Pieces of advice that will help your business grow</h4>
