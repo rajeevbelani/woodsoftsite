@@ -11,7 +11,7 @@ const HomePage = ({ data }) => {
         <HomePageTemplate
             hero={hero}
             whatWeDo={whatWeDo}
-            howWeWork={howWeWork}
+            howWeWork={whatWeDo}
             testimonials={testimonials}
             process={process}
         />
