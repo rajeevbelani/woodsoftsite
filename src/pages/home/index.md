@@ -15,8 +15,10 @@ whatWeDo:
         3
     - heading: Heading 4
       text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
+  descHeading: what description ehading
   description: What Description
   heading: What Heading
+  subHeading: What sub heading
 howWeWork:
   blurbs:
     - heading: Blurb 1
@@ -27,24 +29,6 @@ howWeWork:
       text: jfskljfldkjsljflsdfsd
     - heading: lurb 4
       text: jdksljdlsjdlsjdlksds
-  description: >-
-    DEscription
-
-    DEscriptionDEscriptionDEscriptionDEscriptionDEscriptionDEscriptionDEscription
-
-    DEscription
-
-    v
-
-    DEscription
-
-    DEscription
-
-    DEscription
-
-    DEscription
-
-    DEscriptionDEscription
   heading: How Heading
   subHeading: How Sub heading
 process:
