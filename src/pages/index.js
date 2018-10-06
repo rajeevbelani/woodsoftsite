@@ -5,14 +5,14 @@ import Layout from 'components/common/layout'
 
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
-    const { hero, whatWeDo, howWeWork, testimonials, process } = frontmatter;
+    const { hero, whatWeDo, howWeWork, process } = frontmatter;
     return (
       <Layout>
         <HomePageTemplate
             hero={hero}
             whatWeDo={whatWeDo}
             howWeWork={howWeWork}
-            testimonials={testimonials}
+            
             process={process}
         />
         </Layout>
