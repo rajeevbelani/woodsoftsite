@@ -30,7 +30,7 @@ howWeDo:
   descHeading: How Description Heading
   description: |-
     HOw Deascprition
-     HOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw Deascprition
+     HOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw Deascprition dsdsds
   heading: How Heading
   subHeading: How Sub heading
 process:
@@ -41,8 +41,6 @@ process:
       text: blurb 2
     - heading: Blurb Heading 3
       text: blurb 3
-    - heading: Blurb heading 4
-      text: blurb 4
   description: process description
   heading: process heading
 testimonials:
