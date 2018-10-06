@@ -17,20 +17,34 @@ whatWeDo:
       text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
   description: What Description
   heading: What Heading
-howWeDo:
+howWeWork:
   blurbs:
-    - heading: Heading 1
-      text: How Blurb 1
-    - heading: Heading 2
-      text: How Blurb 2
-    - heading: Heading 3
-      text: How Blurb 3
-    - heading: Heading 4
-      text: How blurb 4
-  descHeading: How Description Heading
-  description: |-
-    HOw Deascprition
-     HOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw DeascpritionHOw Deascprition dsdsds
+    - heading: Blurb 1
+      text: Blurb 1 descriptions
+    - heading: Blurb 2
+      text: desc
+    - heading: Blurb 3
+      text: jfskljfldkjsljflsdfsd
+    - heading: lurb 4
+      text: jdksljdlsjdlsjdlksds
+  description: >-
+    DEscription
+
+    DEscriptionDEscriptionDEscriptionDEscriptionDEscriptionDEscriptionDEscription
+
+    DEscription
+
+    v
+
+    DEscription
+
+    DEscription
+
+    DEscription
+
+    DEscription
+
+    DEscriptionDEscription
   heading: How Heading
   subHeading: How Sub heading
 process:
