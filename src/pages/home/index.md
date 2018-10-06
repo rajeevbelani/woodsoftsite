@@ -41,9 +41,17 @@ process:
       text: blurb 3
   description: process description
   heading: process heading
-testimonials:
-  - {}
-  - {}
-  - {}
+clients:
+  blurbs:
+    - heading: dsds
+      text: sdsdsds
+    - heading: dsds
+      text: dsdsds
+    - heading: dsfddfdfd
+      text: dsdsdsdsds
+    - heading: fdffdf
+      text: fdfdfdfdfd
+  heading: Client Heading
+  subHeading: sub heading
 ---
 
