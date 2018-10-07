@@ -19,6 +19,8 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
+      - {label: "SEO Description", name: "description", widget: "text"}
 
   - name: "pages"
     label: "Pages"

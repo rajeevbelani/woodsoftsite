@@ -64,29 +64,28 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     });
 
-    // // Tag pages:
-    // let tags = []
-    // // Iterate through each post, putting all found tags into `tags`
-    // posts.forEach(edge => {
-    //   if (_.get(edge, `node.frontmatter.tags`)) {
-    //     tags = tags.concat(edge.node.frontmatter.tags)
-    //   }
-    // })
-    // // Eliminate duplicate tags
-    // tags = _.uniq(tags)
-
+    // Tag pages:
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    posts.forEach(edge => {
+      if (_.get(edge, `node.frontmatter.tags`)) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
     // // Make tag pages
-    // tags.forEach(tag => {
-    //   const tagPath = `/tags/${_.kebabCase(tag)}/`
-
-    //   createPage({
-    //     path: tagPath,
-    //     component: path.resolve(`src/templates/tags.js`),
-    //     context: {
-    //       tag,
-    //     },
-    //   })
-    // })
+    tags.forEach(tag => {
+      const tagPath = `/tags/${_.kebabCase(tag)}`
+      let filteredTagPosts = posts.filter(post => (post.node.frontmatter.templateKey === 'article-template' &&  post.node.frontmatter.tags.includes(tag)));
+      createPaginatedPages({
+        edges: filteredTagPosts,
+        createPage: createPage,
+        pageTemplate: "src/templates/blogPage-template.js",
+        pageLength: 5, // This is optional and defaults to 10 if not used
+        pathPrefix: tagPath, // This is optional and defaults to an empty string if not used
+      });
+    })
   })
 }
 

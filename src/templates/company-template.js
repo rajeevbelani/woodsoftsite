@@ -59,7 +59,7 @@ export const CompanyPageQuery = graphql`
         values {
           description
           heading
-          blurb {
+          blurbs {
             heading
             text
           }
