@@ -21,12 +21,11 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
       - {label: "SEO Description", name: "description", required: false, widget: "text"}
-      - {label: "Post Author", name: "postauthor", widget: "relation", collection: "writers", searchFields: ["name"], valueField: "name", displayFields: ["name"]}
+      - {label: "Post Author", name: "author", widget: "relation", collection: "authors", searchFields: ["name"], valueField: "name", displayFields: ["name"]}
 
-  - name: "writers"
-    label: "Writers"
-    name: "writers"
-    folder: "_data/writers"
+  - name: "authors"
+    label: "Authors"
+    folder: "_data/authors"
     fields:
       - {label: "Name", name: "name", widget: "string", hint: "First and Last"}
       - {label: "Description", name: "description", widget: "markdown"}
