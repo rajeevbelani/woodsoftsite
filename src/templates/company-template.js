@@ -23,6 +23,7 @@ export const CompanyPageTemplate = ({ team, values }) => {
 const CompanyPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
     const { hero, team, values } = frontmatter;
+    console.log(`Companies Data :: ${JSON.stringify(data)}`);
 
   return (
     
