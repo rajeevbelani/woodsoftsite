@@ -21,7 +21,7 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
       - {label: "SEO Description", name: "description", required: false, widget: "text"}
-      - {label: "Post Author", name: "postauthor", widget: "relation", collection: "authors", valueField: "name", searchFields: ["name"]}
+      # - {label: "Post Author", name: "postauthor", widget: "relation", collection: "authors", valueField: "name", searchFields: ["name"]}
       - {label: "Related Post", name: "relatedPost", widget: "relation", collection: "blog", valueField: "title", searchFields: ["title"]}
 
   - name: "pages"
