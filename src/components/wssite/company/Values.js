@@ -6,7 +6,7 @@ const Values = ({ data }) => (
     <div class="container">
         <SectionTitle heading={data.heading} subHeading={data.description} />
         <div class="columns services-cards is-minimal is-vcentered is-gapless is-multiline">
-        {data.blurbs.map(blurb => (
+        {/* {data.blurbs.map(blurb => (
             <div class="column">
                 <div class="feature-card card-md hover-inset has-text-centered">
                     <div class="card-icon">
@@ -20,7 +20,7 @@ const Values = ({ data }) => (
                     </div>
                 </div>
             </div>
-        ))};
+        ))}; */}
         </div> 
     </div> 
 );
