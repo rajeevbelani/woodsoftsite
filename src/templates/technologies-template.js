@@ -2,11 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/common/layout';
+import Platforms from 'components/wssite/technologies/Platforms'
+import Practices from 'components/wssite/technologies/Practices'
+import Technologies from 'components/wssite/technologies/Technologies'
+import Hero from 'components/common/TitleHero'
 
-export const TechnologiesPageTemplate = ({ title, content }) => {
+export const TechnologiesPageTemplate = ({ hero, platforms, practices, technologies }) => {
   return (
     <div>
-        <div class="hero is-large is-theme-primary">
+        {/* <div class="hero is-large is-theme-primary">
             <div class="hero-body ">
                 <div class="container has-text-centered">
                     <div class="columns is-vcentered">
@@ -23,135 +27,35 @@ export const TechnologiesPageTemplate = ({ title, content }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
+        <Hero title={hero.heroTitle} subtitle={hero.heroDescription} />
         <section class="section section-feature-grey is-medium">
-            <div class="container">
-                <div class="centered-title">
-                    <h2>We develop for these platforms</h2>
-                    <div class="title-divider"></div>
-                    <div class="subheading">
-                        (Some subtitle here also)
-                    </div>
-                </div>
-
-                <div class="columns services-cards is-minimal is-vcentered is-gapless is-multiline">
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered">
-                            <div class="card-icon">
-                                <i class="im im-icon-Two-Windows"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>Android</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered">
-                            <div class="card-icon">
-                                <i class="im im-icon-Smartphone-4"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>Mobile development</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered">
-                            <div class="card-icon">
-                                <i class="im im-icon-T-Shirt"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>Branding</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered mb-20">
-                            <div class="card-icon">
-                                <i class="im im-icon-Laptop-Phone"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>Responsive design</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered mb-20">
-                            <div class="card-icon">
-                                <i class="im im-icon-Cart-Quantity"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>E-Commerce</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="feature-card card-md hover-inset has-text-centered mb-20">
-                            <div class="card-icon">
-                                <i class="im im-icon-Colosseum"></i>
-                            </div>
-                            <div class="card-title">
-                                <h4>Graphic design</h4>
-                            </div>
-                            <div class="card-feature-description">
-                                <span class="">Lorem ipsum dolor sit amet, clita laoreet ne cum. His caelus elet cu harum inermis iudicabit.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                {/* <div class="has-text-centered mt-40 mb-40 is-title-reveal">
-                    <a class="button button-cta is-bold btn-align primary-btn btn-outlined rounded">Learn more</a>
-                </div> */}
-            </div>
+           <Platforms data={platforms} />
+        </section>
+        <section class="section is-medium">
+            <Practices data={practices} />
+        </section>
+        <section class="section section-feature-grey is-medium">
+            <Technologies data={technologies} />
         </section>
     </div>
   )
 }
 
-TechnologiesPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-}
-
 const TechnologiesPage = ({ data }) => {
-  const { markdownRemark: post } = data
-  console.log(`Technologies Page data :: ${JSON.stringify(post)}`);
-  return (
-    <Layout>
-      <TechnologiesPageTemplate
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  )
-}
-
-TechnologiesPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    const { frontmatter } = data.markdownRemark;
+    const { hero, platforms, practices, technologies } = frontmatter;
+    return (
+        <Layout>
+            <TechnologiesPageTemplate
+                hero={hero}
+                platforms={platforms}
+                practices={practices}
+                technologies={technologies}
+            />
+        </Layout>
+    )
 }
 
 export default TechnologiesPage
@@ -162,18 +66,33 @@ export const TechnologiesPageQuery = graphql`
         id
         frontmatter {
             hero {
-                heroDescription
+                heroDescription  
                 heroTitle
-              }
-              
-              process {
+            }
+            platforms {
                 description
                 heading
                 blurbs {
-                  text
-                  heading
+                heading
+                text
                 }
-              }
+            }
+            practices {
+                description
+                heading
+                blurbs {
+                heading
+                text
+                }
+            }
+            technologies {
+                description
+                heading
+                blurbs {
+                heading
+                text
+                }
+            }
         }
     }
   }

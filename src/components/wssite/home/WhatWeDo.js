@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 
 const WhatWeDo = ({ data }) => (
     <div class="container">
@@ -93,9 +92,5 @@ const WhatWeDo = ({ data }) => (
         </div>
     </div>
 );
-
-WhatWeDo.propTypes = {
-//   data: PropTypes.Object.isRequired,
-};
 
 export default WhatWeDo;

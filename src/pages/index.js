@@ -9,13 +9,13 @@ const HomePage = ({ data }) => {
     return (
       <Layout>
         <HomePageTemplate
-            hero={hero}
-            whatWeDo={whatWeDo}
-            howWeWork={howWeWork}
-            testimonials={clients}
-            process={process}
+          hero={hero}
+          whatWeDo={whatWeDo}
+          howWeWork={howWeWork}
+          testimonials={clients}
+          process={process}
         />
-        </Layout>
+      </Layout>
     )
   }
   

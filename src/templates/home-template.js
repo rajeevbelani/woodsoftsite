@@ -6,7 +6,7 @@ import OurProcess from 'components/wssite/home/OurProcess'
 import WhatWeDo from 'components/wssite/home/WhatWeDo'
 
 
-export default ({ hero, whatWeDo, howWeWork, testimonials, process  }) => {
+export default ({ hero, whatWeDo, howWeWork, clients, process  }) => {
     return (
     <div>
         <Hero data={hero} />
@@ -22,9 +22,9 @@ export default ({ hero, whatWeDo, howWeWork, testimonials, process  }) => {
             <OurProcess data={process} />
         </section>
 
-        {/* <section id="card-testimonials" class="section section-feature-grey is-medium is-skewed-sm">
-            <Testimonials data={testimonials} />
-        </section> */}
+        <section id="card-testimonials" class="section section-feature-grey is-medium is-skewed-sm">
+            <Testimonials data={clients} />
+        </section>
       </div>
     )
 }
