@@ -23,14 +23,6 @@ collections:
       - {label: "SEO Description", name: "description", required: false, widget: "text"}
       - {label: "Post Author", name: "author", widget: "relation", collection: "authors"}
 
-  - name: "authors"
-    label: "Authors"
-    folder: "_data/authors"
-    fields:
-      - {label: "Name", name: "name", widget: "string", hint: "First and Last"}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Title", name: "title", widget: "string"}
-
   - name: "pages"
     label: "Pages"
     files:
@@ -73,11 +65,24 @@ collections:
           - {label: "Process", name: process, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: Text, name: text, widget: text}]}]}
           - {label: Clients, name: clients, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Sub Heading, name: subHeading, widget: string}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: Text, name: text, widget: text}]}]}   
           
-  # - name: "settings"
-  #   label: "Settings"
-  #   delete: false # Prevent users from deleting documents in this collection
-  #   editor:
-  #     preview: false
-  #   files:
+  - name: "settings"
+    label: "Settings"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: "authors"
+        label: "Authors"
+        file: "_data/authors.yml"
+        description: "Author descriptions"
+        fields:
+          - name: authors
+            label: Authors
+            label_singular: "Author"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: "string", hint: "First and Last"}
+              - {label: "Description", name: "description", widget: "markdown"}
+
       
 
