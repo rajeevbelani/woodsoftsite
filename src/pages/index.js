@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import HomePageTemplate from '../templates/home-template'
 import Layout from 'components/common/layout'
+import Gallery from '../components/base/gallery/gallery';
 
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
     const { hero, whatWeDo, howWeWork, clients, process } = frontmatter;
     return (
       <Layout>
+        {/* <Gallery /> */}
         <HomePageTemplate
           hero={hero}
           whatWeDo={whatWeDo}
