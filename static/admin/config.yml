@@ -33,7 +33,7 @@ collections:
       - {label: "Name", name: "name", widget: "string", hint: "First and Last"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Avatar", name: avatar, widget: "image"}
+      - {label: "Avatar", name: "avatar", widget: "image"}
 
   - name: "pages"
     label: "Pages"
