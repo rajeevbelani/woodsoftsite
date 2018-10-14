@@ -7,6 +7,7 @@ import Gallery from '../components/base/gallery/gallery';
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
     const { hero, whatWeDo, howWeWork, clients, process } = frontmatter;
+    console.log(`Whats we Do :: ${JSON.stringify(whatWeDo)}`);
     return (
       <Layout>
         {/* <Gallery /> */}

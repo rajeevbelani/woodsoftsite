@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-netlify-cms-paths`,
     `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-source-filesystem',
