@@ -3,6 +3,7 @@ const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 const { createFilePath } = require('gatsby-source-filesystem');
 const createPaginatedPages = require("gatsby-paginate");
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
@@ -24,10 +25,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date(formatString: "MMMM DD, YYYY")
               coverImage {
                 childImageSharp {
-                  responsiveSizes(maxWidth: 400) {
+                  fluid(maxHeight: 500, quality: 90) {
                     src
-                    srcSet
-                    sizes
                   }
                 }
               }
@@ -101,6 +100,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
+  fmImagesToRelative(node);
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
