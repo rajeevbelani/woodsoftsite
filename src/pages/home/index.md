@@ -1,5 +1,6 @@
 ---
 templateKey: home-template
+coverImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
 hero:
   heroDescription: descrption
   heroTitle: hero title

@@ -1,4 +1,10 @@
 const siteConfig = require('./site-config');
+var netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
 
 module.exports = {
   siteMetadata: {
@@ -10,19 +16,23 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-netlify-cms-paths`,
+    netlifyCmsPaths,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          netlifyCmsPaths,
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              backgroundColor: 'transparent', // required to display blurred image first
             },
           },
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          // 'gatsby-remark-copy-linked-files',
+          // 'gatsby-remark-smartypants',
         ],
       },
     },
@@ -36,12 +46,10 @@ module.exports = {
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
-    //     path: `${__dirname}/public/assets/images`,
+    //     path: `${__dirname}/src/images`,
     //     name: `images`,
     //   },
     // },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify-cms`
   ],
 };
