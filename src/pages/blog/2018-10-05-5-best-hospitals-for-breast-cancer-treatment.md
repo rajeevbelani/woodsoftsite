@@ -10,6 +10,7 @@ description: >-
 tags:
   - hospital
   - cancer
+coverImage: /assets/im-not-doing-shit-today-600x337-1-.jpg
 ---
 India has witnessed a steady growth in the Medical Sector. Now, there are various treatments and healing procedures available for all different kinds of Cancers as well as other ailments.
 
