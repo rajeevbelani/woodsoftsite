@@ -7,6 +7,7 @@ description: >-
   keep us healthy and fight off disease and infection.
 tags:
   - cancer
+coverImage: /assets/im-not-doing-shit-today-600x337-1-.jpg
 ---
 Our immune system is a complicated network of cells, tissues, and organs to keep us healthy and fight off disease and infection. The immune system is composed of two major parts: the innate immune system and the adaptive immune system. Both change as people get older.
 
