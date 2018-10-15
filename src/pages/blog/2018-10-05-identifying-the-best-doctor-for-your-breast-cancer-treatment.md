@@ -8,6 +8,7 @@ description: >-
 tags:
   - doctor
   - cancer
+coverImage: /assets/screen-shot-2018-07-08-at-8.53.52-pm.png
 ---
 After being diagnosed with breast cancer the patient is referred to a number of medical practitioners and introduced to a team of other individuals such as oncology nurses and registered dietician.
 
