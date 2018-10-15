@@ -19,7 +19,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
+      - {label: "Cover Image", name: "coverImage", widget: "image", required: false, tagname: ""}
       - {label: "SEO Description", name: "description", required: false, widget: "text"}
       - {label: "Post Author", name: "postauthor", widget: "relation", required: false, collection: "authors", valueField: "name", searchFields: ["name"]}
       - {label: "Related Post", name: "relatedPost", widget: "relation", required: false, collection: "blog", valueField: "title", searchFields: ["title"]}

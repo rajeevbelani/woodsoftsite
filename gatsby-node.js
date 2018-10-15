@@ -21,6 +21,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               tags
               title
               templateKey
+              image {
+                childImageSharp {
+                  responsiveSizes(maxWidth: 400) {
+                    src
+                    srcSet
+                    sizes
+                  }
+                }
+              }
               date(formatString: "MMMM DD, YYYY")
             }            
           }
