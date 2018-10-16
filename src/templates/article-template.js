@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/common/layout';
+import Img from 'gatsby-image';
 
-export const ArticleTemplate = ({ title, content }) => {
+export const ArticleTemplate = ({ title, content, cover }) => {
   return (
       <section class="section blog-section section-light-grey">
           <div class="container">
@@ -14,7 +15,7 @@ export const ArticleTemplate = ({ title, content }) => {
                               <img class="author-avatar is-hidden-mobile" src="https://via.placeholder.com/250x250" alt="" />
                               <div class="title-block">
                                   <h2>{title}</h2>
-                                  <h4>Pieces of advice that will help your business grow</h4>
+                                  <h4>{JSON.stringify(cover)}</h4>
                                   <button class="like is-full fab-btn mini" data-toggle="tooltip" data-placement="left" data-title="Liked by 64 persons">
                                       <span class="like-wrapper">
                                           <i class="material-icons unliked">favorite_border</i>
@@ -24,6 +25,8 @@ export const ArticleTemplate = ({ title, content }) => {
                                   </button>
                               </div>
                           </div>
+                          
+                          <Img fluid={cover.childImageSharp.fluid} />
                           <div class="post-body content">
                               <div class="author-name pb-10">by <b><a href="#">Marjory Cambell</a></b>, <span>Ecommerce consultant</span></div>
                               <div class="timestamp"><i class="sl sl-icon-clock"></i> oct 16 2018, 4:12pm</div>
@@ -56,16 +59,19 @@ export const ArticleTemplate = ({ title, content }) => {
 ArticleTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
+  cover: PropTypes.object,
 }
 
 const Article = ({ data }) => {
   const { markdownRemark: post } = data
+  console.log(`Article :: ${JSON.stringify(post)}`);
 
   return (
     <Layout>
       <ArticleTemplate
         title={post.frontmatter.title}
         content={post.html}
+        cover={post.frontmatter.coverImage}
       />
     </Layout>
   )
@@ -83,6 +89,18 @@ export const ArticleQuery = graphql`
       html
       frontmatter {
         title
+        templateKey
+        date(formatString: "MMMM DD, YYYY")
+        coverImage {
+            childImageSharp {
+                fluid(maxWidth: 200, maxHeight: 200) {
+                    src
+                    srcSet
+                    base64
+                    srcWebp
+                  }
+            }
+        }
       }
     }
   }

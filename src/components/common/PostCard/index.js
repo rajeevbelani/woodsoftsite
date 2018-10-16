@@ -3,16 +3,17 @@
  */
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image';
 
 const PostCard = ({post}) => {
   return (
 
     <div class="card card-floating-boxed card-shadow">
-    {/* <div class="card-image">
-        <figure class="image is-4by3">
-            <img src="assets/images/photos/demo/flat/cactus.png" alt="" />
-        </figure>
-    </div> */}
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
+            </figure>
+        </div>
         <div class="card-content">
             <div class="media">
                 <div class="media-content">
@@ -20,7 +21,7 @@ const PostCard = ({post}) => {
                     <p class="subtitle is-6">{post.frontmatter.date}</p>
                 </div>
             </div>
-
+            
             <div class="content">
                 {post.excerpt}
             </div>
