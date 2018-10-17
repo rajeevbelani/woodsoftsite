@@ -84,24 +84,21 @@ Article.propTypes = {
 export default Article
 
 export const ArticleQuery = graphql`
-  query Article($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-        templateKey
-        date(formatString: "MMMM DD, YYYY")
-        coverImage {
-            childImageSharp {
-                fluid(maxWidth: 200, maxHeight: 200) {
-                    src
-                    srcSet
-                    base64
-                    srcWebp
-                  }
+    query Article($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            html
+                frontmatter {
+                    title
+                    templateKey
+                    date(formatString: "MMMM DD, YYYY")
+                    coverImage {
+                        childImageSharp {
+                            fluid(maxHeight: 500, quality: 90) {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
             }
         }
-      }
     }
-  }
 `

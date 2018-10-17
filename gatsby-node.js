@@ -19,14 +19,17 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               slug
             }
             frontmatter {
-              tags
               title
               templateKey
               date(formatString: "MMMM DD, YYYY")
               coverImage {
                 childImageSharp {
-                  fluid(maxHeight: 500, quality: 90) {
+                  sizes(maxWidth: 200) {
+                    base64
                     src
+                    srcSet
+                    srcWebp
+                    srcSetWebp
                   }
                 }
               }

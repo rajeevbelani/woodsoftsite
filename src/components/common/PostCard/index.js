@@ -7,12 +7,13 @@ import Img from 'gatsby-image';
 
 const PostCard = ({post}) => {
   return (
-
+        // <Img fluid={post.frontmatter.coverImage.childImageSharp.fluid} />
+    // <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
     <div class="card card-floating-boxed card-shadow">
         <div class="card-image">
-            <figure class="image is-4by3">
+            {/* <figure class="image is-4by3">
                 <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
-            </figure>
+            </figure> */}
         </div>
         <div class="card-content">
             <div class="media">
@@ -30,33 +31,6 @@ const PostCard = ({post}) => {
             </div>
         </div>
     </div>
-    // <div className='container'>
-    //   {posts
-    //     .filter(post => post.node.frontmatter.templateKey === 'article-template')
-    //     .map(({node: post}) => (
-    //       <div
-    //         className='content'
-    //         style={{border: '1px solid #eaecee', padding: '2em 4em'}}
-    //         key={post.id}
-    //       >
-    //         <p>
-    //           <Link className='has-text-primary' to={post.fields.slug}>
-    //             {post.frontmatter.title}
-    //           </Link>
-    //           <span> &bull; </span>
-    //           <small>{post.frontmatter.date}</small>
-    //         </p>
-    //         <p>
-    //           {post.excerpt}
-    //           <br />
-    //           <br />
-    //           <Link className='button is-small' to={post.fields.slug}>
-    //                             Keep Reading →
-    //           </Link>
-    //         </p>
-    //       </div>
-    //     ))}
-    // </div>
   )
 }
 

@@ -3,6 +3,7 @@ import Layout from '../components/common/layout';
 import PostCard from '../components/common/PostCard';
 import Hero from '../components/common/TitleHero'
 import Pagination from '../components/common/Pagination'
+import { graphql } from 'gatsby'
 
 export const BlogListTemplate = ({ posts }) => {
   return (
@@ -20,11 +21,8 @@ export const BlogListTemplate = ({ posts }) => {
 }
 
 const BlogPost = ({ data, pathContext }) => {
-  // const { markdownRemark: post } = data
+  console.log(`PATH Context :: ${JSON.stringify(pathContext)}`);
   const { group, index, first, last, pageCount } = pathContext;
-  // const { group } = pathContext;
-
-  console.log(`Blog Post context   ::  ${JSON.stringify(pathContext)}`)
   return (
     <Layout>
       <Hero title="BLOG" />
@@ -35,5 +33,23 @@ const BlogPost = ({ data, pathContext }) => {
     </Layout>
   )
 }
+
+// export const query = graphql`
+//   query($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       frontmatter {
+//         title
+//         coverImage {
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
+
 
 export default BlogPost
