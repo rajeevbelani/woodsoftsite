@@ -10,7 +10,6 @@ import { StaticQuery, graphql } from 'gatsby';
 const PostCard = ({data, post}) => {
     console.log(`POST  :: ${JSON.stringify(data)}`);
   return (
-        
     // <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
     <div class="card card-floating-boxed card-shadow">
         <div class="card-image">

@@ -21,26 +21,6 @@ export const BlogListTemplate = ({ posts }) => {
   )
 }
 
-// const PostCardWithQuery = props => (
-//     <StaticQuery
-//       query={graphql`
-//         markdownRemark(id: { eq: $props.post.id }) {
-//           site {
-//             siteMetadata {
-//               siteTitle
-//             }
-//           }
-//         }
-//       `}
-//       render={data => <PostCard data={data} {...props} />}
-//     />
-//   );
-  
-  
-//   PostCardWithQuery.propTypes = {
-//     children: PropTypes.node.isRequired,
-//   };
-
 const BlogPost = ({ data, pathContext }) => {
   // console.log(`PATH Context :: ${JSON.stringify(data)}`);
   const { group, pageNumber, first, last, numberOfPages } = pathContext;

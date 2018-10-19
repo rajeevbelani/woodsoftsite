@@ -75,16 +75,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     tags.forEach(tag => {
       const tagPath = `/tags/${_.kebabCase(tag)}`
       let filteredTagPosts = posts.filter(post => (post.node.frontmatter.templateKey === 'article-template' &&  post.node.frontmatter.tags.includes(tag)));
-      createPaginatedPages({
-        edges: filteredTagPosts,
-        createPage: createPage,
-        pageTemplate: "src/templates/blogPage-template.js",
-        pageLength: 5, // This is optional and defaults to 10 if not used
-        pathPrefix: tagPath, // This is optional and defaults to an empty string if not used
+      paginate({
+        createPage, // The Gatsby `createPage` function
+        items: filteredTagPosts, // An array of objects
+        itemsPerPage: 10, // How many items you want per page
+        pathPrefix: tagPath, // Creates pages like `/blog`, `/blog/2`, etc
+        component: path.resolve('src/templates/blogPage-template.js'), // Just like `createPage()`
       });
-    })
-  })
-}
+    });
+  });
+};
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
