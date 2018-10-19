@@ -6,6 +6,7 @@ import Pagination from '../components/common/Pagination'
 import { graphql } from 'gatsby'
 
 export const BlogListTemplate = ({ posts }) => {
+  // console.log(`POSTS :: ${posts}`);
   return (
       <div class="columns is-multiline">
           {posts
@@ -20,36 +21,72 @@ export const BlogListTemplate = ({ posts }) => {
   )
 }
 
+// const PostCardWithQuery = props => (
+//     <StaticQuery
+//       query={graphql`
+//         markdownRemark(id: { eq: $props.post.id }) {
+//           site {
+//             siteMetadata {
+//               siteTitle
+//             }
+//           }
+//         }
+//       `}
+//       render={data => <PostCard data={data} {...props} />}
+//     />
+//   );
+  
+  
+//   PostCardWithQuery.propTypes = {
+//     children: PropTypes.node.isRequired,
+//   };
+
 const BlogPost = ({ data, pathContext }) => {
-  console.log(`PATH Context :: ${JSON.stringify(pathContext)}`);
-  const { group, index, first, last, pageCount } = pathContext;
+  // console.log(`PATH Context :: ${JSON.stringify(data)}`);
+  const { group, pageNumber, first, last, numberOfPages } = pathContext;
+  const posts  = data.allMarkdownRemark.edges;
+  console.log(`POSTS :: ${JSON.stringify(data.allMarkdownRemark.edges)}`);
   return (
     <Layout>
       <Hero title="BLOG" />
       <BlogListTemplate
-        posts={group}
+        posts={posts}
       />
-      <Pagination currentPage={index} numberOfPages={pageCount} />
+      <Pagination currentPage={pageNumber} numberOfPages={numberOfPages} />
     </Layout>
   )
 }
 
-// export const query = graphql`
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       frontmatter {
-//         title
-//         coverImage {
-//           childImageSharp {
-//             fluid {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
+export const BlogPageQuery = graphql`
+  query BlogPage($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      skip: $skip
+      limit: $limit
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            coverImage {
+              childImageSharp {
+                fluid(maxHeight: 500, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }            
+        }
+      }
+    }
+  }
+`
 
 export default BlogPost

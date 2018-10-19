@@ -2,7 +2,7 @@ const _ = require('lodash');
 const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 const { createFilePath } = require('gatsby-source-filesystem');
-const createPaginatedPages = require("gatsby-paginate");
+const { paginate } =  require('gatsby-awesome-pagination');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -13,27 +13,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       allMarkdownRemark(limit: 1000) {
         edges {
           node {
-            excerpt(pruneLength: 400)
             id
             fields {
               slug
             }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
-              coverImage {
-                childImageSharp {
-                  sizes(maxWidth: 200) {
-                    base64
-                    src
-                    srcSet
-                    srcWebp
-                    srcSetWebp
-                  }
-                }
-              }
-            }            
           }
         }
       }
@@ -48,12 +31,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     let filteredPosts = posts.filter(post => post.node.frontmatter.templateKey === 'article-template');
     console.log(`FIltered Posts :: ${JSON.stringify(filteredPosts)}`);
       
-    createPaginatedPages({
-      edges: filteredPosts,
-      createPage: createPage,
-      pageTemplate: "src/templates/blogPage-template.js",
-      pageLength: 5, // This is optional and defaults to 10 if not used
-      pathPrefix: "blog", // This is optional and defaults to an empty string if not used
+    paginate({
+      createPage, // The Gatsby `createPage` function
+      items: filteredPosts, // An array of objects
+      itemsPerPage: 10, // How many items you want per page
+      pathPrefix: '/blog', // Creates pages like `/blog`, `/blog/2`, etc
+      component: path.resolve('src/templates/blogPage-template.js'), // Just like `createPage()`
     });
 
     posts.forEach(edge => {

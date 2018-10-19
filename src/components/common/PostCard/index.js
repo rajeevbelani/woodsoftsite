@@ -2,18 +2,22 @@
  * Created by vaibhav on 2/4/18
  */
 import React from 'react'
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link'
 import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
 
-const PostCard = ({post}) => {
+const PostCard = ({data, post}) => {
+    console.log(`POST  :: ${JSON.stringify(data)}`);
   return (
-        // <Img fluid={post.frontmatter.coverImage.childImageSharp.fluid} />
+        
     // <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
     <div class="card card-floating-boxed card-shadow">
         <div class="card-image">
-            {/* <figure class="image is-4by3">
-                <Img fluid={post.frontmatter.coverImage ? post.frontmatter.coverImage.childImageSharp.fluid : {}} />
-            </figure> */}
+            <figure class="image">
+                <Img fluid={ post.frontmatter.coverImage.childImageSharp.fluid} />
+            </figure>
+            
         </div>
         <div class="card-content">
             <div class="media">
@@ -33,5 +37,23 @@ const PostCard = ({post}) => {
     </div>
   )
 }
+
+// const PostCardWithQuery = props => (
+    
+//     <StaticQuery
+//       query={graphql(`query Post {
+//             markdownRemark(id: { eq: $id }) {
+//                 excerpt(truncate: true)
+//             }
+//         }`, { id: props.post.id })}
+//       render={data => <PostCard data={data} {...props} />}
+//     />
+//   );
+  
+
+  
+//   PostCardWithQuery.propTypes = {
+//     children: PropTypes.node.isRequired,
+//   };
 
 export default PostCard
