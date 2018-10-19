@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withPrefix } from 'gatsby'
 
 const HomeHero = ({ data }) => (
     <div class="hero is-theme-primary is-slant">
@@ -21,7 +22,7 @@ const HomeHero = ({ data }) => (
                     </div>
                     <div class="column is-9 is-offset-1">
                         <figure class="image is-3by2">
-                            <img class="clean-hero-mockup mt-80 z-index-2" src="./assets/images/illustrations/mockups/landing1/macbook-app.png" alt="" />
+                            <img class="clean-hero-mockup mt-80 z-index-2" src={withPrefix('/assets/images/illustrations/mockups/landing1/macbook-app.png')} alt="" />
                         </figure>
                     </div>
 
