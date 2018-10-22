@@ -32,7 +32,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges
     let filteredPosts = posts.filter(post => post.node.frontmatter.templateKey === 'article-template');
-    console.log(`FIltered Posts :: ${JSON.stringify(filteredPosts)}`);
+    // console.log(`FIltered Posts :: ${JSON.stringify(filteredPosts)}`);
       
     paginate({
       createPage, // The Gatsby `createPage` function
@@ -90,7 +90,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
   
   // fmImagesToRelative(node);
-  console.log(`ON CREATE NODE :: ${JSON.stringify(node)}`);
+  // console.log(`ON CREATE NODE :: ${JSON.stringify(node)}`);
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
