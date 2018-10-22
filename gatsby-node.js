@@ -89,7 +89,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
   
-  // fmImagesToRelative(node);
+  fmImagesToRelative(node);
   // console.log(`ON CREATE NODE :: ${JSON.stringify(node)}`);
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
