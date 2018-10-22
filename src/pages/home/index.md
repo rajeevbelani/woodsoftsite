@@ -2,8 +2,8 @@
 templateKey: home-template
 hero:
   heroDescription: descrption
+  heroImage: /assets/im-not-doing-shit-today-600x337-1-.jpg
   heroTitle: hero title
-  image: /assets/im-not-doing-shit-today-600x337-1-.jpg
 whatWeDo:
   blurbs:
     - heading: Heading 1
