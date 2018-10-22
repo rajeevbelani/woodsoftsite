@@ -2,7 +2,7 @@
 templateKey: home-template
 hero:
   heroDescription: descrption
-  heroImage: /assets/im-not-doing-shit-today-600x337-1-.jpg
+  heroImage: /assets/screen-shot-2018-07-08-at-8.53.52-pm.png
   heroTitle: hero title
 whatWeDo:
   blurbs:
