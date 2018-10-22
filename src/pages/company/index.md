@@ -2,6 +2,7 @@
 templateKey: company-template
 hero:
   heroDescription: Company hero esctprionfdhfjd
+  heroImage: /assets/screen-shot-2018-07-08-at-8.53.52-pm.png
   heroTitle: Company Hero
 team:
   description: fksjkfdjfjdkfjdkfdjfdkjfdkjfkdfd
