@@ -2,7 +2,7 @@
 templateKey: home-template
 hero:
   heroDescription: descrption
-  heroImage: /assets/screen-shot-2018-07-08-at-8.53.52-pm.png
+  heroImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
   heroTitle: hero title
 whatWeDo:
   blurbs:
