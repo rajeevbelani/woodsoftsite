@@ -6,10 +6,10 @@ import OurProcess from 'components/wssite/home/OurProcess'
 import WhatWeDo from 'components/wssite/home/WhatWeDo'
 
 
-export default ({ hero, whatWeDo, howWeWork, clients, process  }) => {
+export default ({ hero, coverImage, whatWeDo, howWeWork, clients, process  }) => {
     return (
     <div>
-        <Hero data={hero} />
+        <Hero data={hero} coverImage={coverImage} />
         <section id="services" class="section is-medium">
             <WhatWeDo data={whatWeDo} />
         </section>
