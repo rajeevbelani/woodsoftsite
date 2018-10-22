@@ -53,7 +53,7 @@ collections:
         name: "technologies"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-template"}
-          - {label: Hero, name: hero, widget: object, fields: [{label: Title, name: heroTitle, widget: string}, {label: Description, name: heroDescription, widget: text}, {label: Image, name: image, widget: image}]}
+          - {label: Hero, name: hero, widget: object, fields: [{label: Title, name: heroTitle, widget: string}, {label: Description, name: heroDescription, widget: text}, {label: Hero Image, name: heroImage, widget: image}]}
           - {label: "Platforms", name: platforms, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: Text, name: text, widget: text}]}]}
           - {label: "Development Practices", name: practices, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: Text, name: text, widget: text}]}]}
           - {label: "Technologies", name: technologies, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Heading, name: heading, widget: text}, {label: Text, name: text, widget: text}]}]}
