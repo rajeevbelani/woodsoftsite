@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby'
 import Img from 'gatsby-image';
 
-const HomeHero = ({ data, coverImage }) => (
+const HomeHero = ({ data }) => (
     <div class="hero is-theme-primary is-slant">
         <div id="main-hero" class="hero-body is-clean">
             <div class="container has-text-centered">
@@ -23,7 +23,7 @@ const HomeHero = ({ data, coverImage }) => (
                     </div>
                     <div class="column is-9 is-offset-1">
                         <figure class="image">
-                            <Img fluid={coverImage.childImageSharp.fluid} />
+                            <Img fluid={data.heroImage.childImageSharp.fluid} />
                             {/* <img class="clean-hero-mockup mt-80 z-index-2" src={withPrefix('/assets/images/illustrations/mockups/landing1/macbook-app.png')} alt="" /> */}
                         </figure>
                     </div>

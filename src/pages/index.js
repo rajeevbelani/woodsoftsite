@@ -33,14 +33,15 @@ export const pageQuery = graphql`
             hero {
                 heroDescription
                 heroTitle
-              }
-              coverImage {
-                  childImageSharp {
+                heroImage {
+                    childImageSharp {
                         fluid(maxHeight: 500, quality: 90) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
+                  }
                 }
               }
+              
               whatWeDo {
                 heading
                 subHeading

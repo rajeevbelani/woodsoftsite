@@ -9,7 +9,7 @@ import WhatWeDo from 'components/wssite/home/WhatWeDo'
 export default ({ hero, coverImage, whatWeDo, howWeWork, clients, process  }) => {
     return (
     <div>
-        <Hero data={hero} coverImage={coverImage} />
+        <Hero data={hero} />
         <section id="services" class="section is-medium">
             <WhatWeDo data={whatWeDo} />
         </section>
