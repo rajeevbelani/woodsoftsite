@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/common/layout';
-import Hero from 'components/common/TitleHero'
 import Team from 'components/wssite/company/Team'
 import Values from 'components/wssite/company/Values'
+import Hero from 'components/wssite/home/Hero'
+// import Hero from 'components/common/TitleHero'
 
 
 export const CompanyPageTemplate = ({ team, values }) => {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby'
 import Img from 'gatsby-image';
 
-const HomeHero = ({ data }) => (
+const HomeHero = ({ data, coverImage }) => (
     <div class="hero is-theme-primary is-slant">
         <div id="main-hero" class="hero-body is-clean">
             <div class="container has-text-centered">
