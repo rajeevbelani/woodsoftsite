@@ -27,12 +27,16 @@ whatWeDo:
 howWeWork:
   blurbs:
     - heading: Blurb 1
+      iconName: keyboard_arrow_right
       text: Blurb 1 descriptions
     - heading: Blurb 2
+      iconName: keyboard_arrow_right
       text: desc
     - heading: Blurb 3
+      iconName: keyboard_arrow_right
       text: jfskljfldkjsljflsdfsd
     - heading: lurb 4
+      iconName: keyboard_arrow_right
       text: jdksljdlsjdlsjdlksds
   heading: How Heading
   subHeading: How Sub heading
