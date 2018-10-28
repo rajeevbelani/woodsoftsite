@@ -7,7 +7,7 @@ import Gallery from '../components/base/gallery/gallery';
 const HomePage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
     const { hero, whatWeDo, howWeWork, clients, process, coverImage } = frontmatter;
-    console.log(`Whats we Do ::  ${JSON.stringify(hero)}`)
+    console.log(`Whats we Do :: ${JSON.stringify(coverImage)}  ::  ${JSON.stringify(hero)}`);
     return (
       <Layout>
         {/* <Gallery /> */}
@@ -33,6 +33,13 @@ export const pageQuery = graphql`
             hero {
                 heroDescription
                 heroTitle
+                heroImage {
+                  childImageSharp {
+                    fluid(maxHeight: 500, quality: 90) {
+                      ...GatsbyImageSharpFluid_withWebp_noBase64
+                    }
+                  }
+                }              
               }
               coverImage {
                 childImageSharp {
