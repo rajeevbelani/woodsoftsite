@@ -24,7 +24,7 @@ const HomeHero = ({ hero, coverImage }) => (
                     <div class="column is-9 is-offset-1">
                         <figure class="image">
                             <Img fluid={coverImage.childImageSharp.fluid} />
-                            <Img fluid={hero.heroImage.childImageSharp.fluid} />
+                            {/* <Img fluid={hero.heroImage.childImageSharp.fluid} /> */}
                             {/* <img class="clean-hero-mockup mt-80 z-index-2" src={withPrefix('/assets/images/illustrations/mockups/landing1/macbook-app.png')} alt="" /> */}
                         </figure>
                     </div>
