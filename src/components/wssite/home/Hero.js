@@ -10,10 +10,10 @@ const HomeHero = ({ hero, coverImage }) => (
                 <div class="columns is-vcentered">
                     <div class="column is-5 caption-column has-text-left">
                         <h1 class="clean-title light-text">
-                             { hero.heroTitle }
+                             hero.heroTitle 
                         </h1>
                         <div class="subtitle is-5 pt-10 pb-10">
-                            { hero.heroDescription }
+                             hero.heroDescription 
                         </div>
                         <div class="cta-wrapper has-text-left">
                             <a href="#product" class="button button-cta btn-align btn-outlined is-bold light-btn rounded raised">
@@ -23,7 +23,7 @@ const HomeHero = ({ hero, coverImage }) => (
                     </div>
                     <div class="column is-9 is-offset-1">
                         <figure class="image">
-                            <Img fluid={hero.heroImage.childImageSharp.fluid} />
+                            {/* <Img fluid={hero.heroImage.childImageSharp.fluid} /> */}
                             {/* <img class="clean-hero-mockup mt-80 z-index-2" src={withPrefix('/assets/images/illustrations/mockups/landing1/macbook-app.png')} alt="" /> */}
                         </figure>
                     </div>
