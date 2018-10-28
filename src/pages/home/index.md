@@ -3,7 +3,7 @@ templateKey: home-template
 hero:
   heroDescription: descrption
   heroTitle: hero title
-coverImage: /assets/screen-shot-2018-08-28-at-12.07.23-pm.png
+coverImage: assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
     - heading: Heading 1

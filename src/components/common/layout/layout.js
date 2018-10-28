@@ -4,6 +4,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import Head from 'components/base/head';
 import Header from 'components/common/header';
 // import 'reset.css.js';
+// import 'icons.min.css';
+
 import Footer from 'components/wssite/footer'
 import 'scss/styles.sass'
 
