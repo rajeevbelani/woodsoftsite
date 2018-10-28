@@ -7,14 +7,18 @@ coverImage: assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
     - heading: Heading 1
+      iconName: keyboard_arrow_right
       text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
     - heading: Heading 2
+      iconName: keyboard_arrow_right
       text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
     - heading: Heading 3
+      iconName: keyboard_arrow_right
       text: >-
         What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
         3
     - heading: Heading 4
+      iconName: keyboard_arrow_right
       text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
   descHeading: what description ehading
   description: What Description
