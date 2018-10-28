@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from 'components/common/layout';
 import Team from 'components/wssite/company/Team'
 import Values from 'components/wssite/company/Values'
-import Hero from 'components/wssite/home/Hero'
-// import Hero from 'components/common/TitleHero'
+// import Hero from 'components/wssite/home/Hero'
+import Hero from 'components/common/TitleHero'
 
 
 export const CompanyPageTemplate = ({ team, values }) => {
