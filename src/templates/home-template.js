@@ -10,7 +10,7 @@ export default ({ hero, coverImage, whatWeDo, howWeWork, clients, process  }) =>
     console.log(`Home Hero ${coverImage}`)
     return (
     <div>
-        <Hero data={hero} coverImage={coverImage} />
+        <Hero hero={hero} coverImage={coverImage} />
         <section id="services" class="section is-medium">
             <WhatWeDo data={whatWeDo} />
         </section>

@@ -3,8 +3,8 @@ templateKey: home-template
 coverImage: assets/im-not-doing-shit-today-600x337-1-.jpg
 hero:
   heroDescription: descrption
-  heroImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
   heroTitle: hero title
+  heroImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
 whatWeDo:
   blurbs:
     - heading: Heading 1

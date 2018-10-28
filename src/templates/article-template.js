@@ -64,8 +64,6 @@ ArticleTemplate.propTypes = {
 
 const Article = ({ data }) => {
   const { markdownRemark: post } = data
-  console.log(`Article :: ${JSON.stringify(post)}`);
-
   return (
     <Layout>
       <ArticleTemplate
