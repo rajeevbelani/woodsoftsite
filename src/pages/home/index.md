@@ -1,10 +1,9 @@
 ---
 templateKey: home-template
-coverImage: assets/im-not-doing-shit-today-600x337-1-.jpg
 hero:
   heroDescription: descrption
   heroTitle: hero title
-  heroImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
+coverImage: /assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
     - heading: Heading 1
