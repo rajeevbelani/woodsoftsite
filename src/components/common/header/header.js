@@ -88,13 +88,13 @@ const Header = ({ title }) => (
                         </Link>
                     </div>  
 
-                    <div class="navbar-item is-slide">
+                    {/* <div class="navbar-item is-slide">
                         <Link to="/company">
                             <div class="navbar-item">
                                 Company
                             </div>
                         </Link>
-                    </div>  
+                    </div>   */}
 
                     {/* <div class="navbar-item is-slide">
                         <Link to="/batuwa">
@@ -107,11 +107,11 @@ const Header = ({ title }) => (
 
                   <div class="navbar-end">
                       <div class="navbar-item">
-                      <Link to="/contactus">
-                          <div id="#signup-btn" to="/contactus" class="signup-btn button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
-                              Contact Us
-                          </div>
-                          </Link>
+                        <Link to="/contactus">
+                            <div id="#signup-btn" to="/contactus" class="signup-btn button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
+                                Contact Us
+                            </div>
+                        </Link>
                       </div>
                   </div>
               </div>

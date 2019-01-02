@@ -11,9 +11,4 @@ const SectionTitle = ({ heading, subHeading }) => (
     </div>
 );
 
-SectionTitle.propTypes = {
-  heading: PropTypes.string.isRequired,
-  subHeading: PropTypes.string.isRequired
-};
-
 export default SectionTitle;

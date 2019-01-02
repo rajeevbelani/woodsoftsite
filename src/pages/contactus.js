@@ -71,7 +71,7 @@ const ContactUs = () => {
                             <div class="contact-form-wrapper">
                                 <div>
                                     <h2 class="form-title has-text-centered">Say Hello !</h2>
-                                    <form class="pl-20 pr-20">
+                                    <form class="pl-20 pr-20" data-netlify="true" action="/success">
                                         <div class="columns">
                                             <div class="column is-8 is-offset-2">
                                                 <div class="columns is-vcentered">

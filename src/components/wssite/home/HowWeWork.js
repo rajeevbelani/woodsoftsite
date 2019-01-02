@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionTitle from 'components/common/SectionTitle'
+import randomId from 'random-id';
 
 const HowWeWork = ({ data }) => (
     <div class="container">
@@ -8,7 +9,7 @@ const HowWeWork = ({ data }) => (
         <SectionTitle heading={data.heading} subHeading={data.description} />
         <div class="columns services-cards is-minimal is-vcentered is-gapless is-multiline">
             {data.blurbs.map(blurb => (
-                <div class="column">
+                <div key={randomId(10, 'aA0')} class="column">
                     <div class="feature-card card-md hover-inset has-text-centered">
                         <div class="card-icon">
                             {/* <i class="im im-icon-Two-Windows"></i> */}

@@ -28,24 +28,9 @@ Layout.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-// const LayoutWithQuery = props => (
-//   <StaticQuery
-//     query={graphql`
-//       query LayoutQuery {
-//         site {
-//           siteMetadata {
-//             siteTitle
-//           }
-//         }
-//       }
-//     `}
-//     render={data => <Layout data={data} {...props} />}
-//   />
-// );
 
 class LayoutWithQuery extends React.Component {
-  
-  
+    
   constructor(props) {
     super (props);
     this.state = {
@@ -61,7 +46,7 @@ class LayoutWithQuery extends React.Component {
     document.addEventListener('DOMContentLoaded', () => {
       console.log('here');
       // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.custom-burger'), 0);
       // Check if there are any navbar burgers
       if ($navbarBurgers.length > 0) {
         // Add a click event on each of them
@@ -129,6 +114,7 @@ class LayoutWithQuery extends React.Component {
   handleScroll = () => {
     //navbar navbar-wrapper navbar-fade is-transparent navbar-light
     //navbar navbar-wrapper navbar-fade navbar-faded
+    console.log('Inside Handle Scroll');
     if (window.scrollY > 50) {
       if (this.state.isNavBarTransparent) {
         this.navbarOpaque();

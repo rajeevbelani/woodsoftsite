@@ -1,12 +1,11 @@
 import React from 'react';
 import SectionTitle from 'components/common/SectionTitle';
+import randomId from 'random-id';
 
 const WhatWeDo = ({ data }) => (
     
     <div class="container">
         <SectionTitle heading={data.heading} subHeading={data.subHeading} />
-        
-
         <div class="content-wrapper">
             <div class="columns">
                 <div class="column is-4">
@@ -24,7 +23,7 @@ const WhatWeDo = ({ data }) => (
                 <div class="column is-7 is-offset-1">
                     <div class="columns is-vcentered is-multiline">
                     {data.blurbs.map(blurb => (
-                            <div class="column is-6">
+                            <div key={randomId(10, 'aA0')} class="column is-6">
                                <div class="agency-icon-box">
                                    <div class="is-icon-reveal">
                                        {/* <i class="im im-icon-Mail-Search"></i> */}
