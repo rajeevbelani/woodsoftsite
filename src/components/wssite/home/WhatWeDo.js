@@ -28,7 +28,7 @@ const WhatWeDo = ({ data }) => (
                                <div class="agency-icon-box">
                                    <div class="is-icon-reveal">
                                        {/* <i class="im im-icon-Mail-Search"></i> */}
-                                       <i class="material-icons">keyboard_arrow_right</i>
+                                       <i class="material-icons">{blurb.iconName}</i>
                                        {/* <span className="material-icons">check_circle</span> */}
                                    </div>
                                    <div class="box-title">{blurb.heading}</div>

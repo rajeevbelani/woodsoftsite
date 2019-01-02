@@ -16,7 +16,7 @@ const HomePage = ({ data }) => {
           coverImage={coverImage}
           whatWeDo={whatWeDo}
           howWeWork={howWeWork}
-          testimonials={clients}
+          clients={clients}
           process={process}
         />
       </Layout>
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
                 blurbs {
                   heading
                   text
+                  iconName
                 }
               }
               howWeWork {

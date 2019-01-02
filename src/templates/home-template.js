@@ -7,7 +7,7 @@ import WhatWeDo from 'components/wssite/home/WhatWeDo'
 
 
 export default ({ hero, coverImage, whatWeDo, howWeWork, clients, process  }) => {
-    console.log(`Home Hero ${coverImage}`)
+    console.log(`Home Hero ${clients}`)
     return (
     <div>
         <Hero hero={hero} coverImage={coverImage} />

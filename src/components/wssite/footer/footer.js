@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import { FaFacebook, FaTwitter } from 'react-icons/fa';
 // import posed from 'react-pose';
 
 const Footer = ({ title }) => (
@@ -12,14 +13,14 @@ const Footer = ({ title }) => (
                         <div class="footer-header">
                             <h3>Product</h3>
                         </div>
-                        <ul class="link-list">
+                        {/* <ul class="link-list">
                             <li><a href="#">Discover features</a></li>
                             <li><a href="#">CMS integration</a></li>
                             <li><a href="#">Customers</a></li>
                             <li><a href="#">Weekly sessions</a></li>
                             <li><a href="#">Free trials and demo</a></li>
                             <li><a href="#">What's next ?</a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div class="column">
@@ -27,14 +28,14 @@ const Footer = ({ title }) => (
                         <div class="footer-header">
                             <h3>Company</h3>
                         </div>
-                        <ul class="link-list">
+                        {/* <ul class="link-list">
                             <li><a href="#">About us</a></li>
                             <li><a href="#">About security</a></li>
                             <li><a href="#">User guide</a></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Terms of website use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div class="column">
@@ -42,13 +43,13 @@ const Footer = ({ title }) => (
                         <div class="footer-header">
                             <h3>Learning</h3>
                         </div>
-                        <ul class="link-list">
+                        {/* <ul class="link-list">
                             <li><a href="#">Resources</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">API documentation</a></li>
                             <li><a href="#">Admin guide</a></li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div class="column">
@@ -60,7 +61,7 @@ const Footer = ({ title }) => (
                             <nav class="level is-mobile">
                                 <div class="level-left level-social">
                                     <a href="#" class="level-item">
-                                        <span class="icon"><i class="fa fa-facebook"></i></span>
+                                        <span class="icon"><FaFacebook/></span>
                                     </a>
                                     <a href="#" class="level-item">
                                         <span class="icon"><i class="fa fa-twitter"></i></span>

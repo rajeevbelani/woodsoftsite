@@ -10,6 +10,9 @@ const TitleHero = ({ title, subtitle }) => (
                         <h1 class="clean-title light-text">
                           {title}
                         </h1>
+                        <p class="light-text">
+                          {subtitle}
+                        </p>
                     </div>
                 </div>
             </div>

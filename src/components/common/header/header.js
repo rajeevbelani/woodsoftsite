@@ -21,8 +21,8 @@ import { Link } from 'gatsby';
 
 const Header = ({ title }) => (
   
-<div class="navbar-placeholder">
-    <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent">
+<div class="hero navbar-placeholder">
+    <nav class="navbar navbar-wrapper navbar-fade is-transparent navbar-light">
           <div class="container">
               
               <div class="navbar-brand">
@@ -64,56 +64,63 @@ const Header = ({ title }) => (
               <div class="navbar-menu">
                   
                   <div class="navbar-start">
-                      
                     <div class="navbar-item is-slide">
                         <Link to="/">
-                            Home
+                            <div class="navbar-item">
+                                Home
+                            </div>
                         </Link>
-                      </div>
+                    </div>
 
-                      <div class="navbar-item is-slide">
+                    <div class="navbar-item is-slide">
                         <Link to="/blog">
-                            Blog
+                            <div class="navbar-item">
+                                Blog
+                            </div>
                         </Link>
-                      </div>
+                    </div>
 
-                      <div class="navbar-item is-slide">
+                    <div class="navbar-item is-slide">
                         <Link to="/technologies">
-                            Technologies
+                            <div class="navbar-item">                        
+                                Technologies
+                            </div>
                         </Link>
-                      </div>
+                    </div>  
 
-                      {/* <div class="navbar-item is-slide">
-                        <Link to="/clientele">
-                            Clientele
-                        </Link>
-                      </div> */}
-                      
-                      <div class="navbar-item is-slide">
+                    <div class="navbar-item is-slide">
                         <Link to="/company">
-                            Company
+                            <div class="navbar-item">
+                                Company
+                            </div>
                         </Link>
-                      </div>
-                      <div class="navbar-item is-slide">
-                        <Link to="/batuwa">
-                            Batuwa
-                        </Link>
-                      </div>
-                  </div>
+                    </div>  
 
-                  
+                    {/* <div class="navbar-item is-slide">
+                        <Link to="/batuwa">
+                            <div class="navbar-item">
+                                Batuwa
+                            </div>
+                        </Link>
+                    </div> */}
+                  </div> 
+
                   <div class="navbar-end">
-                  
                       <div class="navbar-item">
-                          <a id="#signup-btn" href="landing-v3-signup.html" class="button button-cta btn-outlined is-bold btn-align primary-btn rounded raised">
+                      <Link to="/contactus">
+                          <div id="#signup-btn" to="/contactus" class="signup-btn button button-cta btn-outlined is-bold btn-align light-btn rounded raised">
                               Contact Us
-                          </a>
+                          </div>
+                          </Link>
                       </div>
                   </div>
               </div>
           </div>
       </nav>
-      {/* <Container>
+      {/*
+      button button-cta btn-align btn-outlined is-bold light-btn rounded raised
+      button button-cta btn-outlined is-bold btn-align primary-btn rounded raised
+      <Container>
       <Link to="/">
         <Title tag="h1">{title}</Title>
       </Link>
@@ -122,6 +129,7 @@ const Header = ({ title }) => (
     </Container> */}
       </div>
 );
+
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,

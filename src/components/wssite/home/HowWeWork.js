@@ -11,7 +11,8 @@ const HowWeWork = ({ data }) => (
                 <div class="column">
                     <div class="feature-card card-md hover-inset has-text-centered">
                         <div class="card-icon">
-                            <i class="im im-icon-Two-Windows"></i>
+                            {/* <i class="im im-icon-Two-Windows"></i> */}
+                            <i class="material-icons">{blurb.iconName}</i>
                         </div>
                         <div class="card-title">
                             <h4>{blurb.heading}</h4>
