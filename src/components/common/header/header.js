@@ -44,8 +44,8 @@ const Header = ({ title }) => (
                   </a> */}
 
                   
-                  <div class="custom-burger" data-target="">
-                      <Link id="" class="responsive-btn" to="">
+                  <div class="custom-burger" data-target="burger-menu">
+                      {/* <Link id="" class="responsive-btn" to=""> */}
                           <span class="menu-toggle">	
                               <span class="icon-box-toggle"> 	
                                   <span class="rotate">
@@ -55,13 +55,13 @@ const Header = ({ title }) => (
                                   </span>
                               </span>
                           </span>
-                      </Link>
+                      {/* </Link> */}
                   </div>
                   
               </div>
 
               
-              <div class="navbar-menu">
+              <div id="burger-menu" class="navbar-menu">
                   
                   <div class="navbar-start">
                     <div class="navbar-item is-slide">

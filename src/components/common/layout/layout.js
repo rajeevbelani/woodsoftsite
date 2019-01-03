@@ -39,34 +39,59 @@ class LayoutWithQuery extends React.Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.navbarOpaque = this.navbarOpaque.bind(this);
     this.navbarTransparent = this.navbarTransparent.bind(this);
+    this.navbarMobileDark = this.navbarMobileDark.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    document.addEventListener('DOMContentLoaded', () => {
+    // window.addEventListener('DOMContentLoaded', () => {
       console.log('here');
       // Get all "navbar-burger" elements
       const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.custom-burger'), 0);
       // Check if there are any navbar burgers
+      console.log(`navbarBurgers  ::: ${$navbarBurgers}`);
       if ($navbarBurgers.length > 0) {
         // Add a click event on each of them
         $navbarBurgers.forEach( el => {
           el.addEventListener('click', () => {
+            console.log(`ONCLICK :::: ${el}`);
+            console.log(`ONCLICK :::: ${el.classList}`);
+            // this.navbarOpaque();
             // Get the target from the "data-target" attribute
             const target = el.dataset.target;
             const $target = document.getElementById(target);
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            // el.classList.toggle('is-dark-mobile');
+            this.navbarMobileDark();
             el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
           });
         });
       }
     
-    });
+    // });
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  navbarMobileDark = () => {
+    console.log('navbarMobileDark ');
+    const $navbars = Array.prototype.slice.call(document.querySelectorAll('.navbar'), 0);
+    if ($navbars.length > 0) {
+      $navbars.forEach( el => {
+        el.classList.toggle('is-dark-mobile');
+      });
+    }
+
+    const $iconbox = Array.prototype.slice.call(document.querySelectorAll('.icon-box-toggle'), 0);
+    console.log(`ICONBOX ::: ${$iconbox.length}`);
+    if ($iconbox.length > 0) {
+      $iconbox.forEach( el => {
+        el.classList.toggle('active');
+      });
+    }
   }
 
   navbarTransparent = () => {

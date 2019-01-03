@@ -28,8 +28,8 @@ const ContactUs = () => {
                                 Address
                             </div>
                             <div class="description shadow-description">
-                                <b>48, Church Street, First district
-                                    <br />59852 New York, USA</b>
+                                <b>Brooklyn Hills Tower, T-34
+                                    <br />Andheri (W), Mumbai - 400053</b>
                             </div>
                         </div>
                         
@@ -41,7 +41,7 @@ const ContactUs = () => {
                                 Email
                             </div>
                             <div class="description shadow-description">
-                                <b>hello@bulkit.io</b>
+                                <b>contact@woodsofttechnologies.com</b>
                                 <br />
                             </div>
                         </div>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                 Phone
                             </div>
                             <div class="description shadow-description">
-                                <b>+1 555 306 87</b>
+                                <b>+91-8108888129</b>
                                 <br />
                             </div>
                         </div>
@@ -66,7 +66,6 @@ const ContactUs = () => {
             <div class="section no-padding">
                 <div class="container is-fluid no-margin">
                     <div class="columns is-gapless is-not-tablet-portrait">
-                        
                         <div class="column is-6">
                             <div class="contact-form-wrapper">
                                 <div>
@@ -76,34 +75,28 @@ const ContactUs = () => {
                                             <div class="column is-8 is-offset-2">
                                                 <div class="columns is-vcentered">
                                                     <div class="column is-4">
-                                                        
                                                         <div class="control-material is-primary">      
                                                             <input class="material-input" type="text" required="" />
                                                             <span class="material-highlight"></span>
                                                             <span class="bar"></span>
                                                             <label>Name *</label>
                                                         </div>
-                                                        
                                                     </div>
                                                     <div class="column is-4">
-                                                        
                                                         <div class="control-material is-primary">      
                                                             <input class="material-input" type="text" required="" />
                                                             <span class="material-highlight"></span>
                                                             <span class="bar"></span>
                                                             <label>Email *</label>
                                                         </div>
-                                                        
                                                     </div>
                                                     <div class="column is-4">
-                                                        
                                                         <div class="control-material is-primary">      
                                                             <input class="material-input" type="text" required="" />
                                                             <span class="material-highlight"></span>
                                                             <span class="bar"></span>
                                                             <label>Company</label>
                                                         </div>
-                                                        
                                                     </div>
                                                 </div>
                                                 
