@@ -11,7 +11,7 @@ team:
     - text: dksjkdjsdksdsdsdsds
 values:
   blurbs:
-    - heading: Blurb 1
+    - heading: Blurb 1 new chage
       text: description
     - heading: Blurb 2
       text: cxjdklsjdklajlkda
