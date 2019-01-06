@@ -30,20 +30,39 @@ whatWeDo:
   subHeading: What sub heading
 howWeWork:
   blurbs:
-    - heading: Blurb 1
+    - heading: Agile Approach
       iconName: keyboard_arrow_right
-      text: Blurb 1 descriptions
-    - heading: Blurb 2
+      text: >-
+        We use Agile methodologies in order to deepen our knowledge, improve our
+        processes, reduce inefficiencies, and create better products.
+    - heading: Deep Tech Expertise
       iconName: keyboard_arrow_right
       text: desc
-    - heading: Blurb 3
+    - heading: Quality Matters
       iconName: keyboard_arrow_right
-      text: jfskljfldkjsljflsdfsd
-    - heading: lurb 4
+      text: >-
+        Quality matters to our partners, and it matters to us. We focus on clean
+        code and the maintainability and scalability of the final product. Our
+        team is always happy to advise you on the best technical solutions.
+    - heading: Performance Reporting
       iconName: keyboard_arrow_right
-      text: jdksljdlsjdlsjdlksds
-  heading: How Heading
-  subHeading: How Sub heading
+      text: >-
+        Frequent reporting makes our clients active participants in the
+        development process – and members of our team.
+    - heading: Continuous Delivery
+      text: >-
+        Our continuous delivery practices minimize risks associated with a
+        release
+    - heading: Scalability
+      text: >-
+        We take care of scalability so as to handle traffic of any magnitude
+        with zero downtime
+  heading: How We Work?
+  subHeading: >-
+    Our team uses our expertise in design and development to explore and define
+    the best strategy for your team. We work to grow and maintain a transparent
+    collaboration that extends beyond a launch date. From concept to delivery,
+    we offer solutions that will ensure a successful product.
 process:
   blurbs:
     - heading: Agile Approach
@@ -69,12 +88,8 @@ process:
       text: >-
         We take care of scalability so as to handle traffic of any magnitude
         with zero downtime
-  description: >-
-    Our team uses our expertise in design and development to explore and define
-    the best strategy for your team. We work to grow and maintain a transparent
-    collaboration that extends beyond a launch date. From concept to delivery,
-    we offer solutions that will ensure a successful product.
-  heading: 'How We Work? '
+  description: ''
+  heading: ' '
 clients:
   blurbs:
     - heading: dsds
