@@ -272,3 +272,97 @@ footer.footer-light-medium {
         height: 28px;
     }
 }
+
+footer.colored-footer {
+    background: $secondary;
+    padding: 0;
+    .footer-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 0;
+        text-align: center;
+        .footer-form {
+            width: 460px;
+            img {
+                max-width: 120px;
+            }
+            .control {
+                position: relative;
+                margin-top: 20px;
+                .input {
+                    font-size: 1.1rem;
+                    height: 44px;
+                    background: transparent;
+                    border: 1px solid $smoke-white;
+                    color: $smoke-white;
+                    padding-bottom: 8px;
+                    padding-right: 158px;
+                    &::-webkit-input-placeholder { 
+                        color: $smoke-white;
+                    }
+                    &::-moz-placeholder { 
+                        color: $smoke-white;
+                    }
+                    &:-ms-input-placeholder { 
+                        color: $smoke-white;
+                    }
+                    &:-moz-placeholder {
+                        color: $smoke-white;
+                    }
+                }
+                .input-button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 44px;
+                    color: $secondary;
+                    border: 1px solid $smoke-white;
+                    border-radius: 0 100px 100px 0;
+                    width: 130px;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition: all .3s;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+    .footer-footer {
+        padding: 25px 0;
+        border-top: 1px solid darken($smoke-white, 10%);
+        .footer-block {
+            width: 33%;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .designed-by {
+                color: $smoke-white;
+                font-size: 1rem;
+                .fa {
+                    margin: 0 4px;
+                }
+            }
+            .links {
+                a {
+                    color: $smoke-white;
+                    margin: 0 12px;
+                }
+            }
+            .social {
+                a {
+                    margin: 0 4px;
+                    i {
+                        font-size: 20px;
+                        color: $smoke-white;;
+                    }
+                }
+            }
+        }
+    }
+}
