@@ -1,24 +1,24 @@
 ---
 templateKey: technologies-template
-coverImage: assets/screen-shot-2018-07-08-at-8.53.52-pm.png
 hero:
-  heroDescription: desc tech
-  heroTitle: Hero Tech 1
+  heroDescription: >-
+    We develop software for a variety of platforms. Our solutions are perfectly
+    tailored to your business needs.
+  heroTitle: 'Web, Mobile, IoT'
 platforms:
   blurbs:
-    - heading: Heading
-      text: Blurb1
-    - heading: Blurb Headjksjd
-      text: ksjdlskjdlsds
-    - heading: dsjkdljskl
-      text: sjkldjskljdskl dsklj dklsj dklsds
-    - heading: dsjdksjdkl
-      text: dskjdklsjdlsds
-  description: >-
-    Platforms description Platforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms description
-  heading: Platforms Heading
+    - heading: Android
+      text: ''
+    - heading: iOS
+      text: ''
+    - heading: Web
+      text: ''
+    - heading: |
+        Wearables
+      text: ''
+    - heading: IoT
+  description: ''
+  heading: Platforms we develop for
 practices:
   blurbs:
     - heading: heading
