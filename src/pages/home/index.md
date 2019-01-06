@@ -57,12 +57,24 @@ process:
         Quality matters to our partners, and it matters to us. We focus on clean
         code and the maintainability and scalability of the final product. Our
         team is always happy to advise you on the best technical solutions.
+    - heading: Performance Reporting
+      text: >-
+        Frequent reporting makes our clients active participants in the
+        development process – and members of our team.
+    - heading: Continuous Delivery
+      text: >-
+        Our continuous delivery practices minimize risks associated with a
+        release
+    - heading: Scalability
+      text: >-
+        We take care of scalability so as to handle traffic of any magnitude
+        with zero downtime
   description: >-
     Our team uses our expertise in design and development to explore and define
     the best strategy for your team. We work to grow and maintain a transparent
     collaboration that extends beyond a launch date. From concept to delivery,
     we offer solutions that will ensure a successful product.
-  heading: 'How we Work? '
+  heading: 'How We Work? '
 clients:
   blurbs:
     - heading: dsds
