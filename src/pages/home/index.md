@@ -46,14 +46,23 @@ howWeWork:
   subHeading: How Sub heading
 process:
   blurbs:
-    - heading: Heading 1
-      text: 'blurb1 '
-    - heading: Blurb Heading 2
+    - heading: Agile Approach
+      text: >-
+        We use Agile methodologies in order to deepen our knowledge, improve our
+        processes, reduce inefficiencies, and create better products.
+    - heading: Deep Tech Expertise
       text: blurb 2
-    - heading: Blurb Heading 3
-      text: blurb 3
-  description: process description
-  heading: process heading
+    - heading: Quality Matters
+      text: >-
+        Quality matters to our partners, and it matters to us. We focus on clean
+        code and the maintainability and scalability of the final product. Our
+        team is always happy to advise you on the best technical solutions.
+  description: >-
+    Our team uses our expertise in design and development to explore and define
+    the best strategy for your team. We work to grow and maintain a transparent
+    collaboration that extends beyond a launch date. From concept to delivery,
+    we offer solutions that will ensure a successful product.
+  heading: 'How we Work? '
 clients:
   blurbs:
     - heading: dsds
