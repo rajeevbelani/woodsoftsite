@@ -578,12 +578,12 @@ TABLE OF CONTENTS
             .text-header {
                 .text-subtitle {
                     color: $accent;
-                    font-family: 'Nexa Light', sans-serif;
+                    font-family: 'Clear Sans', sans-serif;
                 }
             }
         }
         &.text-title {
-            font-family: 'Nexa Bold', sans-serif;
+            font-family: 'Clear Sans', sans-serif;
             font-size: 1.15em;
             margin-bottom: .25em;
             font-weight: bold;
@@ -691,7 +691,7 @@ TABLE OF CONTENTS
     .card-content {
         .media-content {
             a {
-                font-family: 'Nexa Bold', sans-serif;
+                font-family: 'Clear Sans', sans-serif;
                 font-size: 16px;
                 color: $blue-grey;
                 &:hover {
@@ -699,7 +699,7 @@ TABLE OF CONTENTS
                 }
             }
             p {
-                font-family: 'Nexa Light';
+                font-family: 'Clear Sans';
                 font-weight: 700;
                 color: $muted-grey;
             }

@@ -24,24 +24,26 @@ const Header = ({ title }) => (
 <div class="hero navbar-placeholder">
     <nav class="navbar navbar-wrapper navbar-fade is-transparent navbar-light">
           <div class="container">
-              
-              <div class="navbar-brand">
-                  {/* <Link class="navbar-item" href="/">
-                      <img src="assets/images/logos/bulkit-blue.svg" alt="" />
+                {/* <Link class="navbar-item" href="/">
+                      <img src="assets/images/lrlogo.png" alt="" />
                   </Link> */}
+              <div class="navbar-brand">
+                  <Link  href="/">
+                      <img src="assets/images/lrlogo.png" alt="" />
+                  </Link>
 
                   
-                  {/* <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                  <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
                       <span class="menu-toggle">	
                           <span class="icon-box-toggle"> 	
                               <span class="rotate">
-                                  <i class="icon-line-top"></i>
+                                  {/* <i class="icon-line-top"></i>
                                   <i class="icon-line-center"></i>
-                                  <i class="icon-line-bottom"></i> 
+                                  <i class="icon-line-bottom"></i>  */}
                               </span>
                           </span>
                       </span>
-                  </a> */}
+                  </a>
 
                   
                   <div class="custom-burger" data-target="burger-menu">

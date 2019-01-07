@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Head from 'components/base/head';
 import Header from 'components/common/header';
+import 'typeface-clear-sans'
 // import 'reset.css.js';
 // import 'icons.min.css';
 

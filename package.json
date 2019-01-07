@@ -46,7 +46,8 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-pose": "^3.0.2",
-    "styled-components": "^3.4.4"
+    "styled-components": "^3.4.4",
+    "typeface-clear-sans": "0.0.44"
   },
   "devDependencies": {
     "ava": "^0.25.0",

@@ -15,6 +15,18 @@ TABLE OF CONTENTS
 0. CSS Imports
 ========================================================================== */
 
+@font-face {
+    font-family: 'Clear Sans';
+    // src: url("fonts/NexaLight.woff") format("woff"), url("fonts/NexaLight.ttf")  format("truetype");
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-weight: bold;
+    // src: url("fonts/NexaBold.woff") format("woff"), url("fonts/NexaBold.ttf")  format("truetype");
+}
+
+
 @import 'partials/layout-colors';
 @import 'partials/themes-lemonade';
 @import 'partials/layout-navbar';
