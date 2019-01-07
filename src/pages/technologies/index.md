@@ -1,23 +1,25 @@
 ---
 templateKey: technologies-template
 hero:
-  heroDescription: desc tech
-  heroTitle: Hero Tech 1
+  heroDescription: >-
+    We develop software for a variety of platforms. Our solutions are perfectly
+    tailored to the needs of your business and your clients.
+  heroTitle: 'Web, Mobile, and Wearables'
 platforms:
   blurbs:
-    - heading: Heading
-      text: Blurb1
-    - heading: Blurb Headjksjd
-      text: ksjdlskjdlsds
-    - heading: dsjkdljskl
-      text: sjkldjskljdskl dsklj dklsj dklsds
-    - heading: dsjdksjdkl
-      text: dskjdklsjdlsds
+    - heading: Web
+      text: ''
+    - heading: Android
+      text: ''
+    - heading: iOS
+      text: ''
+    - heading: Wearables
+      text: ''
   description: >-
-    Platforms description Platforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms description
-  heading: Platforms Heading
+    Software that runs on a single platform can’t meet all the needs of modern
+    businesses. We offer a wide range of services that cover a variety of
+    platforms.
+  heading: We develop for these platforms
 practices:
   blurbs:
     - heading: heading
