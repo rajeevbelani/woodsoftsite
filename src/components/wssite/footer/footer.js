@@ -28,8 +28,8 @@ const Footer = () => (
                         © 2018 Woodsoft Technologies
                     </div>
                     <div class="footer-block links has-text-centered">
-                        <a href="http://www.woodsofttechnologies.com/termsandconditions.html">Terms &amp; Conditions</a>
-                        <a href="http://www.woodsofttechnologies.com/privacypolicy.html">Privacy policy</a>
+                        <a href="/terms.html">Terms &amp; Conditions</a>
+                        <a href="/privacy.html">Privacy policy</a>
                         {/* <a href="#">Help</a> */}
                     </div>
                     <div class="footer-block social has-text-right">
