@@ -1,8 +1,10 @@
 ---
 templateKey: technologies-template
 hero:
-  heroDescription: desc tech
-  heroTitle: Hero Tech 1
+  heroDescription: >-
+    We develop software for a variety of platforms. Our solutions are perfectly
+    tailored to the needs of your business and your clients.
+  heroTitle: 'Web, Mobile, and Wearables'
 platforms:
   blurbs:
     - heading: Heading
