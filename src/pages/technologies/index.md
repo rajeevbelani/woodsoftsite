@@ -7,19 +7,19 @@ hero:
   heroTitle: 'Web, Mobile, and Wearables'
 platforms:
   blurbs:
-    - heading: Heading
-      text: Blurb1
-    - heading: Blurb Headjksjd
-      text: ksjdlskjdlsds
-    - heading: dsjkdljskl
-      text: sjkldjskljdskl dsklj dklsj dklsds
-    - heading: dsjdksjdkl
-      text: dskjdklsjdlsds
+    - heading: Web
+      text: ''
+    - heading: Android
+      text: ''
+    - heading: iOS
+      text: ''
+    - heading: Wearables
+      text: ''
   description: >-
-    Platforms description Platforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms
-    descriptionPlatforms descriptionPlatforms descriptionPlatforms description
-  heading: Platforms Heading
+    Software that runs on a single platform can’t meet all the needs of modern
+    businesses. We offer a wide range of services that cover a variety of
+    platforms.
+  heading: We develop for these platforms
 practices:
   blurbs:
     - heading: heading
