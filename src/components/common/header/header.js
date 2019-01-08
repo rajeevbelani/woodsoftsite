@@ -28,7 +28,7 @@ const Header = ({ title }) => (
                       <img src="assets/images/lrlogo.png" alt="" />
                   </Link> */}
               <div class="navbar-brand">
-                  <Link  href="/">
+                  <Link to="/">
                       <img src="assets/images/lrlogo.png" alt="" />
                   </Link>
 
