@@ -6,7 +6,7 @@ description: ''
 tags:
   - doctor
   - cancer
-coverImage: /assets/screen-shot-2018-07-08-at-8.53.52-pm.png
+coverImage: /assets/reactjs.png
 ---
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. But instead of using regular JavaScript, React code should be written in something called JSX.
 
