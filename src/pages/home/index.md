@@ -36,12 +36,9 @@ howWeWork:
     - heading: Deep Tech Expertise
       iconName: keyboard_arrow_right
       text: desc
-    - heading: Quality Matters
+    - heading: Create
       iconName: keyboard_arrow_right
-      text: >-
-        Quality matters to our partners, and it matters to us. We focus on clean
-        code and the maintainability and scalability of the final product. Our
-        team is always happy to advise you on the best technical solutions.
+      text: ''
   heading: Our Process
   subHeading: >-
     Before creation, there's thinking. Our process is sharp and let us craft the
