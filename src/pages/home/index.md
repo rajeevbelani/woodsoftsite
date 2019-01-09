@@ -7,7 +7,7 @@ coverImage: assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
     - heading: Mobile Applications & Websites
-      iconName: keyboard_arrow_right
+      iconName: devices
       text: >-
         Websites are the cornerstone of the information age. We design for four
         corners and ensure your website will look beautiful on any of today’s
