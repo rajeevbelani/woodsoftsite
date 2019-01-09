@@ -30,39 +30,19 @@ whatWeDo:
   subHeading: What sub heading
 howWeWork:
   blurbs:
-    - heading: Agile Approach
+    - heading: Think
       iconName: keyboard_arrow_right
-      text: >-
-        We use Agile methodologies in order to deepen our knowledge, improve our
-        processes, reduce inefficiencies, and create better products.
+      text: ''
     - heading: Deep Tech Expertise
       iconName: keyboard_arrow_right
       text: desc
-    - heading: Quality Matters
+    - heading: Create
       iconName: keyboard_arrow_right
-      text: >-
-        Quality matters to our partners, and it matters to us. We focus on clean
-        code and the maintainability and scalability of the final product. Our
-        team is always happy to advise you on the best technical solutions.
-    - heading: Performance Reporting
-      iconName: keyboard_arrow_right
-      text: >-
-        Frequent reporting makes our clients active participants in the
-        development process – and members of our team.
-    - heading: Continuous Delivery
-      text: >-
-        Our continuous delivery practices minimize risks associated with a
-        release
-    - heading: Scalability
-      text: >-
-        We take care of scalability so as to handle traffic of any magnitude
-        with zero downtime
-  heading: How We Work?
+      text: ''
+  heading: Our Process
   subHeading: >-
-    Our team uses our expertise in design and development to explore and define
-    the best strategy for your team. We work to grow and maintain a transparent
-    collaboration that extends beyond a launch date. From concept to delivery,
-    we offer solutions that will ensure a successful product.
+    Before creation, there's thinking. Our process is sharp and let us craft the
+    best quality.
 process:
   blurbs:
     - heading: Websites
