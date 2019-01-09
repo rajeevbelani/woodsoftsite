@@ -8,7 +8,7 @@ description: >-
 tags:
   - hospital
   - cancer
-coverImage: /assets/im-not-doing-shit-today-600x337-1-.jpg
+coverImage: /assets/android_jetpack.png
 ---
 Android Jetpack is a set of components, tools and guidance to make great Android apps. The Android Jetpack components bring together the existing Support Library and Architecture Components and arranges them into four categories:
 
