@@ -6,20 +6,30 @@ hero:
 coverImage: assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
-    - heading: Mobile Applications
-      iconName: keyboard_arrow_right
-      text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
+    - heading: Mobile Applications & Websites
+      iconName: devices
+      text: >-
+        Websites are the cornerstone of the information age. We design for four
+        corners and ensure your website will look beautiful on any of today’s
+        internet connected devices.
     - heading: IOT
       iconName: keyboard_arrow_right
-      text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
+      text: >-
+        We can program apps to speak to home appliances, Bluetooth and
+        near-field hardware as well as your game console, like Xbox
     - heading: Digital Marketing
       iconName: keyboard_arrow_right
       text: >-
-        What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
-        3
+        Creating applications in the digital universe requires a plan.
+        Consulting is part of our business and we are always here to help.
     - heading: UI & UX
       iconName: keyboard_arrow_right
-      text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
+      text: >-
+        It’s all about the user. Effective user interface design increases
+        customer satisfaction. We carefully create both front-ends and back-ends
+        for usability. We offer prototyping, branding, UI and UX design for web
+        and mobile products. Our approach is simple: we focus on how actual
+        people will use our products. 
   descHeading: Get to know us
   description: >-
     Consumers are using an ever-increasing variety of platforms to access
