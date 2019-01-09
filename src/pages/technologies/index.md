@@ -53,19 +53,19 @@ practices:
   heading: Quality-driven processes
 technologies:
   blurbs:
-    - heading: Android
+    - heading: Java
       text: ''
-    - heading: iOS
+    - heading: Kotlin
       text: ''
-    - heading: dskskjlds dkljs djs ldjslds
-      text: >-
-        dskjkdsj dklsjdlk sjdkls jdlksdskjkdsj dklsjdlk sjdkls jdlksdskjkdsj
-        dklsjdlk sjdkls jdlksdskjkdsj dklsjdlk sjdkls jdlksdskjkdsj dklsjdlk
-        sjdkls jdlksdskjkdsj dklsjdlk sjdkls jdlksdskjkdsj dklsjdlk sjdkls
-        jdlksdskjkdsj dklsjdlk sjdkls jdlksdskjkdsj dklsjdlk sjdkls
-        jdlksdskjkdsj dklsjdlk sjdkls jdlks
-    - heading: heading 1jdksjdksjdksjd
-      text: djksjdlsjdlks jdlks djlsk jdksl djslk fldk jfdl fjdl
+    - heading: Swift
+      text: ''
+    - heading: Objective-C
+      text: ''
+    - heading: Javascript
+    - heading: Typescript
+    - heading: ReactJS
+    - heading: NodeJS
+    - heading: MongoDB
   description: >-
     We use modern, proven technologies and approaches that allow us to
     effectively extend and scale our products.
