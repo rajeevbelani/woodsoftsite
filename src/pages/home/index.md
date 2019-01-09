@@ -55,12 +55,15 @@ howWeWork:
     best quality.
 process:
   blurbs:
-    - heading: 'Think '
+    - heading: Agile Approach
       text: ''
-    - heading: Iterate
+    - heading: Deep tech expertise
       text: ''
-    - heading: Create
+    - heading: Personal commitment
       text: ''
+    - heading: Regular reporting
+    - heading: Time tracking
+    - heading: Scalability
   description: ''
   heading: Our Process
 clients:
