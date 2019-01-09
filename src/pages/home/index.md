@@ -13,17 +13,17 @@ whatWeDo:
         corners and ensure your website will look beautiful on any of today’s
         internet connected devices.
     - heading: IOT
-      iconName: keyboard_arrow_right
+      iconName: router
       text: >-
         We can program apps to speak to home appliances, Bluetooth and
         near-field hardware as well as your game console, like Xbox
     - heading: Digital Marketing
-      iconName: keyboard_arrow_right
+      iconName: laptop_mac
       text: >-
         Creating applications in the digital universe requires a plan.
         Consulting is part of our business and we are always here to help.
     - heading: UI & UX
-      iconName: keyboard_arrow_right
+      iconName: subtitles
       text: >-
         It’s all about the user. Effective user interface design increases
         customer satisfaction. We carefully create both front-ends and back-ends
