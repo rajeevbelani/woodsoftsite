@@ -7,7 +7,7 @@ description: >-
   plays nicely with Java in the same projects. Why not give it a try?
 tags:
   - cancer
-coverImage: ''
+coverImage: /assets/kotlin.png
 ---
 Kotlin is a general purpose, open source, statically typed “pragmatic” programming language for the JVM and Android that combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support. Versions of Kotlin for JavaScript (ECMAScript 5.1) and native code (using LLVM) are in the works.
 
