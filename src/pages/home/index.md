@@ -6,28 +6,28 @@ hero:
 coverImage: assets/screen-shot-2018-08-28-at-12.07.23-pm.png
 whatWeDo:
   blurbs:
-    - heading: Heading 1
+    - heading: Mobile Applications
       iconName: keyboard_arrow_right
       text: What Blurb 1What Blurb 1What Blurb 1What Blurb 1What Blurb 1
-    - heading: Heading 2
+    - heading: IOT
       iconName: keyboard_arrow_right
       text: What Blurb 2 What Blurb 2What Blurb 2What Blurb 2
-    - heading: Heading 3
+    - heading: Digital Marketing
       iconName: keyboard_arrow_right
       text: >-
         What blurb 3 What blurb 3What blurb 3What blurb 3What blurb 3What blurb
         3
-    - heading: Heading 4
+    - heading: UI & UX
       iconName: keyboard_arrow_right
       text: What blurb 4 What blurb 4 What blurb 4 What blurb 4
-  descHeading: We Build Applications that Look Great on Every Device
+  descHeading: Get to know us
   description: >-
     Consumers are using an ever-increasing variety of platforms to access
     services. Designing only for one type of device will leave some of your
     users with a frustrating experience. We design all of our websites and
     applications using the responsive web design approach. 
-  heading: Who We Are?
-  subHeading: What sub heading
+  heading: What we do
+  subHeading: We create new quality valued digital products everyday. Check it out !
 howWeWork:
   blurbs:
     - heading: Think
