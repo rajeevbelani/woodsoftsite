@@ -19,15 +19,15 @@ module.exports = {
     netlifyCmsPaths,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: [
-          'material icons',
-          'roboto:300,400,500,700',
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-fonts',
+    //   options: {
+    //     fonts: [
+    //       'material icons',
+    //       'roboto:300,400,500,700',
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
