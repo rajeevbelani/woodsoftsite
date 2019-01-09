@@ -8,6 +8,7 @@ hero:
 platforms:
   blurbs:
     - heading: Web
+      image: /assets/wslogo1.png
       text: ''
     - heading: Android
       text: ''
