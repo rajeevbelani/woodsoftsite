@@ -40,16 +40,19 @@ whatWeDo:
   subHeading: We create new quality valued digital products everyday. Check it out !
 howWeWork:
   blurbs:
-    - heading: Think
+    - heading: Agile Approach
       iconName: keyboard_arrow_right
       text: ''
     - heading: Deep Tech Expertise
       iconName: keyboard_arrow_right
       text: desc
-    - heading: Create
+    - heading: Personal commitment
       iconName: keyboard_arrow_right
       text: ''
-  heading: Our Process
+    - heading: Regular reporting
+    - heading: Time tracking
+    - heading: Scalability
+  heading: How We Work
   subHeading: >-
     Before creation, there's thinking. Our process is sharp and let us craft the
     best quality.
