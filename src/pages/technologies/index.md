@@ -15,6 +15,7 @@ platforms:
       text: ''
     - heading: Wearables
       text: ''
+    - heading: IOT
   description: >-
     Software that runs on a single platform can’t meet all the needs of modern
     businesses. We offer a wide range of services that cover a variety of
