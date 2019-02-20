@@ -20,7 +20,7 @@ const Head = ({
 }) => (
   <Helmet>
     <html lang="en" />
-
+    <meta name="google-site-verification" content="vBcm2I6KMOHC_mT6VgrRGVCEwavkBXJe8r2jF426Liw" />
     <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
     <meta
       content="width=device-width,initial-scale=1.0,user-scalable=yes"
